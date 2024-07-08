@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "The derivative of a function at a point",
-  "body": " The derivative of a function at a point   In the activities that follow, we begin studying the derivative of a function at a particular input value. The derivative is important because it measures the instantaneous rate of change of one quantity with respect to another. For example, in automobiles with camera detection systems and automatic braking, these systems have to measure the instantaneous rate at which the distance is changing between the car and the vehicle ahead of it. The derivative also measures the slope of the line tangent to a smooth curve. The tangent line is important in graphical applications such as the design of fonts using Bezier curves, which use tangent lines to control how curves are pieced together to generate visually appealing letters and figures.   This is a test figure.     "
+  "body": " The derivative of a function at a point   In the activities that follow, we begin studying the derivative of a function at a particular input value. The derivative is important because it measures the instantaneous rate of change of one quantity with respect to another. For example, in automobiles with camera detection systems and automatic braking, these systems have to measure the instantaneous rate at which the distance is changing between the car and the vehicle ahead of it. The derivative also measures the slope of the line tangent to a smooth curve. The tangent line is important in graphical applications such as the design of fonts using Bezier curves, which use tangent lines to control how curves are pieced together to generate visually appealing letters and figures.   This is a test figure.      Title   "
 },
 {
   "id": "sec-deriv-pt-2-1",
@@ -53,6 +53,15 @@ var ptx_lunr_docs = [
   "number": "1.3.1",
   "title": "",
   "body": " This is a test figure.   "
+},
+{
+  "id": "ex-deriv-pt-name",
+  "level": "2",
+  "url": "sec-deriv-pt.html#ex-deriv-pt-name",
+  "type": "Exercise",
+  "number": "1.3.1",
+  "title": "Title.",
+  "body": "Title "
 },
 {
   "id": "backmatter-2",
