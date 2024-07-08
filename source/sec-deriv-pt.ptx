@@ -16,5 +16,6 @@
 
   </introduction>
 
+  <xi:include href="./exercises/ex-deriv-pt.ptx" />
 
 </section>

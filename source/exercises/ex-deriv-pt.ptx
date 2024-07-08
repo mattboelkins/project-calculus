@@ -5,7 +5,7 @@
   <title>Title</title>
      <interactive xml:id="doenet-interactive-exercise-deriv-pt-name1" platform="doenetml">
       <slate surface="doenetml">
-        <xi:include href="./doenet/ex-deriv-pt-name1.xml" parse="text"/>
+        <xi:include href="./doenet/ex-deriv-pt-name1.ptx" parse="text"/>
       </slate>   
     </interactive>  
 </exercise> 
