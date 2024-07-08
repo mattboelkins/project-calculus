@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-deriv-pt" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The derivative of a function at a point</title>
+
+
+  <introduction>
+    <p> 
+      In the activities that follow, we begin studying the <term>derivative</term> of a function at a particular input value.  The derivative is important because it measures the instantaneous rate of change of one quantity with respect to another.  For example, in automobiles with camera detection systems and automatic braking, these systems have to measure the instantaneous rate at which the distance is changing between the car and the vehicle ahead of it.  The derivative also measures the slope of the line tangent to a smooth curve.  The tangent line is important in graphical applications such as the design of fonts using Bezier curves, which use tangent lines to control how curves are pieced together to generate visually appealing letters and figures. 
+    </p>
+
+    <figure xml:id="F-sec-limit-intro-apps">
+      <caption>This is a test figure.</caption>
+      <image width="100%" source="images/test1" />
+    </figure>
+
+  </introduction>
+
+
+</section>

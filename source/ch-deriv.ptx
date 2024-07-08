@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-deriv" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Derivative</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-velocity.ptx" />
+  <xi:include href="sec-limit.ptx" />
+  <xi:include href="sec-deriv-pt.ptx" />
+</chapter>
