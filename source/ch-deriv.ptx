@@ -4,11 +4,12 @@
   <title>The Derivative</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> This is where we will provide a big-picture introduction to calculus in general, and the first chapter in particular. </p>
   </introduction>
 
   <!-- include sections -->
   <xi:include href="sec-velocity.ptx" />
   <xi:include href="sec-limit.ptx" />
   <xi:include href="sec-deriv-pt.ptx" />
+  <xi:include href="sec-deriv-fxn.ptx" />  
 </chapter>

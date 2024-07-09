@@ -6,16 +6,1090 @@
 
   <introduction>
     <p> 
-      In the activities that follow, we begin studying the <term>derivative</term> of a function at a particular input value.  The derivative is important because it measures the instantaneous rate of change of one quantity with respect to another.  For example, in automobiles with camera detection systems and automatic braking, these systems have to measure the instantaneous rate at which the distance is changing between the car and the vehicle ahead of it.  The derivative also measures the slope of the line tangent to a smooth curve.  The tangent line is important in graphical applications such as the design of fonts using Bezier curves, which use tangent lines to control how curves are pieced together to generate visually appealing letters and figures. 
+      In the activities that follow, we begin studying the <term>derivative</term> of a function at a particular input value.  The derivative is important because it measures the instantaneous rate of change of one quantity with respect to another.  For example, in automobiles with camera detection systems and automatic braking, these systems have to measure the instantaneous rate at which the distance is changing between the car and the vehicle ahead of it.  
     </p>
 
-    <figure xml:id="F-sec-limit-intro-apps">
-      <caption>This is a test figure.</caption>
-      <image width="100%" source="images/test1" />
+    <figure xml:id="F-sec-deriv-pt-intro-apps">
+      <caption>Car camera systems measure the instantaneous rates of change of the distance to other moving objects.  Bezier curves use tangent lines to control how multiple curves are pieced together to generate useful shapes, such as letters in different fonts. Explore more with <url href="http://gvsu.edu/s/0zC">this interactive website</url>.</caption>
+        <sidebyside widths="45% 45%" margins="0% 0%">
+          <image source="images/car-cameras.jpg" />
+          <image source="images/letter-S-bezier.jpg" />          
+        </sidebyside>
     </figure>
+
+    <p>
+      The derivative also measures the slope of the line tangent to a smooth curve.  The tangent line is important in graphical applications such as the design of fonts using Bezier curves, which use tangent lines to control how curves are pieced together to generate visually appealing letters and figures. 
+    </p>
+
+    <xref provisional="need capacity for generating accessible images"/>
 
   </introduction>
 
-  <xi:include href="./exercises/ex-deriv-pt.ptx" />
+  <subsection xml:id="sec-deriv-pt-subsection-BC">
+    <title>Before Class</title>
+    <exploration xml:id="sec-deriv-pt-BA1">
+      <p>
+        This beginning activity will introduce the limit definition of the derivative using an animation with embedded questions.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1m9_N7AeLF2Xugtb7fjNntLfFTcfzFyL1IoeU22h-33g/edit?usp=sharing">in this Google document</url>.
+      </p>
+    </exploration>
+
+    <xref provisional="decide what to call pre-class activities (explorations, beginning activities, etc)"/>
+
+    <p>
+      For a function <m>f</m>, the <term>derivative of <m>f</m> evaluated at <m>x = a</m></term>
+      is defined by 
+      <me>
+        f'(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}
+      </me>, provided this limit exists.  The value of <m>f'(a)</m> measures the slope of the tangent line to <m>y = f(x)</m> at the point <m>(a, f(a))</m> and is also the instantaneous rate of change of <m>f</m> with respect to <m>x</m> at the instant <m>x = a</m>.
+    </p>
+    <p>
+      The quantity <m>\frac{f(a+h)-f(a)}{h}</m> is often called <term>the difference quotient</term>, and this quantity measures the average rate of change of <m>f</m> on the interval <m>[a, a+h]</m>.
+    </p>  
+
+    <xref provisional="plan scheme for cross-referencing and indexing"/>
+    <xref provisional="decide about boxes for important stuff"/>
+
+    <exploration  xml:id="sec-deriv-pt-BA2">
+      <p>
+        This worked example introduces how to apply the limit definition of the derivative to a quadratic function.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1kengWagJtnYu25DQtEBU9lM3TSvUH_VU0Piwjoxr2pQ/edit?usp=sharing">in this Google document</url>.
+      </p>
+
+      <xref provisional="sample Parsons problem?"/>
+
+    </exploration>
+
+    <p>
+      To use the limit definition of the derivative to calculate <m>f'(2)</m> for <m>f(x) = x - x^2</m>, we execute the following steps.
+
+      <table>
+        <title>Finding <m>f'(2)</m> for <m>f(x) = x - x^2</m>.</title>
+        <tabular>
+          <col halign="right" />
+          <col halign="left" />
+          <col halign="left" />
+          <row>
+            <cell><m>f'(2)</m></cell>
+            <cell><m>= \displaystyle \lim_{h \to 0} \frac{f(2+h)-f(2)}{h}</m></cell>
+            <cell>Apply the limit definition using <m>a = 2</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell><m>= \displaystyle \lim_{h \to 0} \frac{(2+h) - (2+h)^2 - (-2)}{h}</m></cell>
+            <cell>Apply the rule for <m>f(x)</m> to get <m>f(2+h)</m> and <m>f(2)</m></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell><m>= \displaystyle \lim_{h \to 0} \frac{-h^2-3h}{h}</m></cell>
+            <cell>Simplify the numerator of the difference quotient</cell>
+          </row> 
+          <row>
+            <cell></cell>
+            <cell><m>= \displaystyle \lim_{h \to 0} \frac{h(-h-3)}{h}</m></cell>
+            <cell>Factor the numerator</cell>
+          </row>   
+          <row>
+            <cell></cell>
+            <cell><m>= \displaystyle \lim_{h \to 0} (-h-3)</m></cell>
+            <cell>Divide to get <m>\frac{h}{h} = 1</m></cell>
+          </row>  
+          <row>
+            <cell></cell>
+            <cell><m>= \displaystyle -3</m></cell>
+            <cell>Take the limit as <m>h \to 0</m> to find <m>f'(2) = -3</m></cell>
+          </row>                                
+        </tabular>
+      </table>
+    </p>
+
+    <exploration  xml:id="sec-deriv-pt-BA3">
+      <p>
+        This guided example leads students to apply the limit definition of the derivative to a rational function.  A draft of the text and images for the animation/video can be found <url href="https://docs.google.com/document/d/1p_egMo87QQ1HR2pNyAiIv-ldE06jOlqWdbKHRgpZJrk/edit?usp=sharing">in this Google document</url>.
+      </p>
+
+    </exploration>
+
+    <exercises>
+      <title>Questions to be embedded in <xref ref="sec-deriv-pt-BA1">Exploration</xref>. </title>
+
+      <exercise xml:id="sec-deriv-pt-BA3-fillin1" label="BA3-fillin1">
+        <title>Q1</title>
+        <statement>
+          <p>
+            For <m>f(x) = \frac{1}{x-1}</m>, the value of <m>f(3)</m> is <var width="10" />.
+          </p>
+        </statement>
+        <setup>
+          <var>
+          <condition string="1/2">
+          <feedback>
+            <p>
+              Correct, since <m>f(3) = \frac{1}{3-1} = \frac{1}{2}</m>.
+            </p>
+          </feedback>
+          </condition>
+          <condition string="0.5">
+          <feedback>
+            <p>
+              Correct, since <m>f(3) = \frac{1}{3-1} = \frac{1}{2}</m>.
+            </p>
+          </feedback>
+          </condition>
+          <condition string=".*">
+          <feedback>
+            <p>
+              Incorrect.
+            </p>
+          </feedback>
+          </condition>
+          </var>
+        </setup>
+      </exercise>  
+
+      <exercise xml:id="sec-deriv-pt-BA3-MC1" label="BA3-MC1">
+        <title>Q2</title>
+        <statement>
+          <p>
+            For <m>f(x) = \frac{1}{x-1}</m>, the simplest expression for <m>f(3+h)</m> is
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>f(3+h) = \frac{1}{3+h-1}</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            While that equation is true, the result is not the most simplified expression.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>f(3+h) = \frac{1}{2+h}</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct: <m>f(3+h) = \frac{1}{3+h-1} = \frac{1}{2+h}</m>
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>f(3+h) = \frac{1}{2} + \frac{1}{h}</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s incorrect.  When there is a sum in the denominator, the fraction can’t be separated: <m>\frac{1}{2+h} \ne \frac{1}{2} + \frac{1}{h}</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+            <m>f(3+h) = \frac{1}{2} + \frac{1}{h-1}</m>
+          </p>
+          </statement>
+          <feedback>
+            That’s incorrect; try evaluating <m>f(x)</m> using <m>x = 3+h</m>.
+          </feedback>
+        </choice>
+        </choices>
+        <hint>
+          <p>
+            Since <m>f(x) = \frac{1}{x-1}</m>, this gives a rule for whatever is substituted for <m>x</m>.  For example, <m>f(\Box) = \frac{1}{\Box - 1}</m>.
+          </p>
+        </hint>
+        <hint>
+          <p>
+            <m>f(3+h) = \frac{1}{(3+h)-1}</m>
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-BA3-MC2" label="BA3-MC2">
+        <title>Q3</title>
+        <statement>
+          <p>
+            To subtract the fractions <m>\frac{1}{2+h}</m> and <m>\frac{1}{2}</m>, the needed common denominator is
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>2+h</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>4+h</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>(2+h) \cdot 2</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s correct.  The product of the two denominators provides a common denominator to subtract the fraction.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              <m>4+4h</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              That’s incorrect.
+            </p>
+          </feedback>
+        </choice>
+        </choices>
+        <hint>
+          <p>
+            For example, to subtract <m>\frac{1}{3} - \frac{1}{5}</m>, the common denominator is <m>3 \cdot 5 = 15</m>: <m>\frac{1}{3} - \frac{1}{5} = \frac{1}{3}\cdot\frac{5}{5} - \frac{1}{5}\cdot\frac{3}{3} = \frac{3 - 5}{15} = \frac{2}{15}</m>.
+          </p>
+        </hint>
+        <hint>
+          <p>
+            Consider the product of the denominators of the two fractions to subtract.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-BA3-MC3" label="BA3-MC3">
+        <title>Q4</title>
+        <statement>
+          <p>
+            The quantity <m>2 - (2+h)</m> simplifies to
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>h</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>0</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>2</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s incorrect. 
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>-h</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              That’s correct.
+            </p>
+          </feedback>
+        </choice>
+        </choices>
+        <hint>
+          <p>
+            When subtracting a quantity in parentheses, remember to distribute the minus sign.
+          </p>
+        </hint>
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-BA3-MC4" label="BA3-MC4">
+        <title>Q5</title>
+        <statement>
+          <p>
+            Evaluating the limit as <m>h \to 0</m> in <m>f'(3) = \displaystyle \lim_{h \to 0} \frac{-1}{(2+h) \cdot 2}</m> shows that
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>f'(3) = -\frac{1}{4}</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>f'(3) = \frac{1}{4}</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>f'(3) = -\frac{1}{2}</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s incorrect. 
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              <m>f'(3) = 0</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              That’s incorrect.
+            </p>
+          </feedback>
+        </choice>
+        </choices>
+        <hint>
+          <p>
+            When subtracting a quantity in parentheses, remember to distribute the minus sign.
+          </p>
+        </hint>
+      </exercise>
+
+    </exercises>
+
+    <figure xml:id="F-sec-deriv-pt-after-BA3">
+      <caption>Summary of the result of <xref ref="sec-deriv-pt-BA3">Exploration</xref></caption>
+        <sidebyside widths="45% 45%" margins="0% 0%">
+          <image source="images/deriv-pt-BA3-tan-line.jpg" />
+ 
+          <p>
+            For the function <m>f(x) = \frac{1}{x-1}</m>, the limit definition of the derivative shows that <m>f'(3)=-\frac{1}{4}</m>, which is the slope of the tangent line to <m>y = f(x)</m> at the point <m>(3, f(3)) = (3, \frac{1}{2})</m>.  The fact that  <m>f'(3)=-\frac{1}{4}</m> also shows that at the instant <m>x = 3</m>, the function <m>y = f(x)</m> is decreasing at an instantaneous rate of <m>-\frac{1}{4}</m> units of height per <m>1</m> unit of change in <m>x</m>.
+          </p>
+
+        </sidebyside>
+    </figure>
+
+
+
+  </subsection>
+
+  <subsection>
+    <title>During Class</title>
+
+    <subsection xml:id="sec-deriv-pt-H1">
+      <title>During Class - Hour 1</title>
+      <p>
+        Discussion<fn>The instructor will have data on student responses to the before-class activities and will need to respond accordingly.</fn> and summary of ideas from before-class work:
+        <xref provisional="need images"/>
+
+        <ul>
+          <li>
+            <p>
+              On the graph of a function <m>y = f(x)</m>, the line between the points <m>(a, f(a))</m> and <m>(b, f(b))</m> is called a <term>secant line</term>, and the slope of the secant line is the same as the average rate of change of the function from <m>x = a</m> to <m>x = b</m>, 
+              <me>
+                AV_[a,b] = \frac{f(b)-f(a)}{b-a}
+              </me>.
+              Viewing <m>b = a + h</m>, the slope of the secant line on the interval <m>[a,a+h]</m> is 
+              <me>
+                AV_[a,a+h] = \frac{f(a+h)-f(a)}{h}
+              </me>.
+            </p>
+          </li>
+          <li>
+            <p>
+              For a function <m>f</m>, the <term>derivative of <m>f</m> evaluated at <m>x = a</m></term>
+              is defined by 
+              <me>
+                f'(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}
+              </me>, provided this limit exists.  The value of <m>f'(a)</m> measures the slope of the tangent line to <m>y = f(x)</m> at the point <m>(a, f(a))</m> and is also the instantaneous rate of change of <m>f</m> with respect to <m>x</m> at the instant <m>x = a</m>.
+            </p>
+            <p>
+              The quantity <m>\frac{f(a+h)-f(a)}{h}</m> is often called <term>the difference quotient</term>, and this quantity measures the average rate of change of <m>f</m> on the interval <m>[a, a+h]</m>.
+            </p>  
+          </li>
+          <li>
+            <p>
+              A key algebraic step in applying the limit definition is evaluating <m>f(a+h)</m>.  For example, in <xref ref="sec-deriv-pt-BA2">Exploration</xref> where <m>f(x)=x-x^2</m>, <m>f(2+h) = (2+h)-(2+h)^2=-h^2-3h-2</m>, and in <xref ref="sec-deriv-pt-BA3">Exploration</xref> where <m>f(x) = \frac{1}{x-1}</m>, <m>f(3+h) = \frac{1}{3+h-1} = \frac{1}{2+h}</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <activity xml:id="sec-deriv-pt-DC-Act1">
+        <statement>
+          Consider the function <m>f</m> whose formula is <m>f(x)=3-2x</m>.
+          <ol marker="a.">
+            <li>
+              <p>
+                Notice that <m>f</m> is a linear function.  What is the slope of <m>f</m> at every value of <m>x</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                Compute the average rate of change of <m>f</m> on the intervals <m>[1,4]</m>, <m>[3,7]</m>, and <m>[5, 5+h]</m>.  Simplify each result as much as possible.  What do you notice about these quantities?
+              </p>
+            </li>
+            <li>
+              <p>
+                Use the limit definition of the derivative to compute the instantaneous rate of change of <m>f</m> at the point where <m>a = 1</m>.  That is, use the limit definition of the derivative to compute <m>f'(1)</m>. Why does this result make sense in light of earlier questions?
+              </p>
+            </li>
+            <li>
+              <p>
+                Without doing any additional computations, what are <m>f'(2)</m>, <m>f'(\pi)</m>, <m>f'(-13)</m>?  Write a couple of sentences that explain how you know the answers without doing computations, making use of the phrases/terms <q>average rate of change</q>, <q>instantaneous rate of change</q>, <q>derivative</q>, <q>slope</q> and <q>linear function</q>.
+              </p>
+            </li>
+          </ol>
+          <xref provisional="need to add answers and solutions"/>
+        </statement>
+      </activity>
+
+    <exercises>
+      <title>Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act1">Activity</xref>. </title>
+      <xref provisional="need a peer-instruction format that's an alternative to exercises (don't reveal answers)"/>
+
+      <exercise xml:id="sec-deriv-pt-DC-Act1-CQ1" label="DC-Act1-CQ1">
+        <title>Clicker Question 1</title>
+        <statement>
+          <p>
+            Consider a function <m>y = f(x)</m>.  Which of the following statements is true about the quantity <m>\frac{f(5+h)-f(5)}{h}</m>?
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>\frac{f(5+h)-f(5)}{h} = -2 + h</m>, for <m>f(x) = 3 - 2x</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>\frac{f(5+h)-f(5)}{h} = f'(5)</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>\frac{f(5+h)-f(5)}{h} = -2</m>, for <m>f(x) = 3 - 2x</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>\frac{f(5+h)-f(5)}{h} = h</m>, for <m>f(x) = 3 - 2x</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        </choices>
+<!--        <hint>
+          <p>
+            Hint?
+          </p>
+        </hint> -->
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-DC-Act1-CQ2" label="DC-Act1-CQ2">
+        <title>Clicker Question 2</title>
+        <statement>
+          <p>
+            Let <m>f(x) = 3 - 2x</m>.  Consider the following statements.
+          </p>
+          <p>
+            <ol marker="1.">
+              <li>
+                <p>
+                  The average rate of change of <m>f</m> on the interval <m>[1,4]</m> is <m>-2</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  The slope of the secant line between the points <m>(1,f(1))</m> and <m>(4,f(4))</m> is <m>-2</m>.
+                </p>
+              </li>    
+              <li>
+                <p>
+                  The instantaneous rate of change of <m>f</m> at <m>a = 1</m> is <m>-2</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <m>f'(1)=-2</m>.
+                </p>
+              </li>          
+            </ol>
+          </p>
+          <p>
+            Which of the following statements is true?
+          </p>
+        </statement>
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            Only (2) is true.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            Only (1) and (2) are true.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            Only (3) and (4) are true.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            All of (1), (2), (3), and (4) are true.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct.
+          </p>
+        </feedback>
+        </choice>
+        </choices>
+<!--        <hint>
+          <p>
+            Hint?
+          </p>
+        </hint> -->
+      </exercise>
+
+    </exercises>
+
+    <p>
+      Summary of important ideas regarding the derivative of a linear function.
+      <ul>
+        <li>
+          <p>
+            Every linear function has a constant average rate of change on any possible interval.  For example, <m>f(x)=-3x+5</m> is a linear function with slope <m>-3</m>, and the average rate of change of <m>f</m> on any interval is <m>-3</m>.  The instantaneous rate of change of <m>f</m> at any input value will therefore also be <m>-3</m>, since the instantaneous rate of change is the limit of average rates of change.
+          </p>
+        </li>
+        <li>
+          <p>
+            More generally, for any linear function of form <m>f(x) = mx + b</m>b, <m>f'(a) = m</m> for any choice of <m>a</m>.  Said differently, the value of the derivative of any linear function at any chosen input is the slope of the line.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    </subsection>
+
+    <subsection>
+      <title>During Class - Hour 2</title>
+
+      <activity xml:id="sec-deriv-pt-DC-Act2">
+        <statement>
+          Let <m>g(x) = |x|</m>.  Recall that if <m>x \ge 0</m>, then <m>|x| = x</m>, and if <m>x \lt 0</m>, then <m>|x| = -x</m>.
+          <ol marker="a.">
+            <li>
+              <p>
+                Determine <m>g'(3)</m> and <m>g'(5)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Determine <m>g'(-2)</m> and <m>g'(-6)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                For <m>g(x) = |x|</m>, the limit definition of the derivative shows that 
+                <me>
+                  g'(0) = \lim_{h \to 0} \frac{g(0+h) - g(0)}{h} = \lim_{h \to 0} \frac{|0+h| - |0|}{h} = \lim_{h \to 0} \frac{|h|}{h}
+                </me>.
+                If <m>h</m> is a small positive number, what is the value of <m>\frac{|h|}{h}</m>?
+                If <m>h</m> is a small negative number, what is the value of <m>\frac{|h|}{h}</m>?
+              </p>
+            </li>
+            <li>
+              <p>
+                Explain why <m>\displaystyle \lim_{h \to 0} \frac{|h|}{h}</m> does not exist.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use a graphing tool such as <em>Desmos</em> to plot <m>g(x)=|x|</m>, and zoom in on the point where <m>x = 0</m>.  Explain why it makes sense that <m>g'(0)</m> does not exist.
+              </p>
+            </li>
+          </ol>
+          <xref provisional="need to add answers and solutions"/>
+        </statement>
+      </activity>
+
+    <exercises>
+      <title>Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act2">Activity</xref>. </title>
+      <xref provisional="need a peer-instruction format that's an alternative to exercises (don't reveal answers)"/>
+
+      <exercise xml:id="sec-deriv-pt-DC-Act1-CQ3" label="DC-Act1-CQ3">
+        <title>Clicker Question 3</title>
+        <statement>
+          <p>
+            Let <m>g(x) = |x|</m>.  Recall that if <m>x \ge 0</m>, then <m>|x| = x</m>, and if <m>x \lt 0</m>, then <m>|x| = -x</m>.  Consider the following statements.
+            <ol marker="1.">
+              <li>
+                <m>g'(-3) = -1</m> and <m>g'(4) = 1</m>
+              </li>
+              <li>
+                <m>g'(-2) = 1</m> and <m>g'(5) = -1</m>
+              </li>
+              <li>
+                If <m>a \lt 0</m>, then <m>g'(a) = -1</m>, and if <m>a \gt 0</m>, then <m>g'(a) = 1</m>
+              </li>
+              <li>
+                If <m>a \gt 0</m>, then <m>g'(a) = -1</m>, and if <m>a \lt 0</m>, then <m>g'(a) = 1</m>
+              </li>
+            </ol>
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            Only (1) is true
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            Only (1) and (3) are true
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            None of (1), (2), (3), or (4) are true.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            Only (2) and (4) are true
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        </choices>
+<!--        <hint>
+          <p>
+            Hint?
+          </p>
+        </hint> -->
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-DC-Act1-CQ4" label="DC-Act1-CQ4">
+        <title>Clicker Question 4</title>
+        <statement>
+          <p>
+            For <m>g(x) = |x|</m>, the limit definition of the derivative shows that 
+                <me>
+                  g'(0) = \lim_{h \to 0} \frac{g(0+h) - g(0)}{h} = \lim_{h \to 0} \frac{|0+h| - |0|}{h} = \lim_{h \to 0} \frac{|h|}{h}
+                </me>.
+            Which of the following statements is true?    
+          </p>
+        </statement>
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>\displaystyle g'(0) = \lim_{h \to 0} \frac{|h|}{h} = -1</m> 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>\displaystyle g'(0) = \lim_{h \to 0} \frac{|h|}{h} = 1</m>  
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>\displaystyle g'(0) = \lim_{h \to 0} \frac{|h|}{h} = 0</m> 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>\displaystyle g'(0) = \lim_{h \to 0} \frac{|h|}{h}</m> does not exist  
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct.
+          </p>
+        </feedback>
+        </choice>
+        </choices>
+<!--        <hint>
+          <p>
+            Hint?
+          </p>
+        </hint> -->
+      </exercise>
+
+    </exercises>
+
+    <p>
+      Summary of important ideas regarding the derivative of the absolute value function.
+      <ul>
+        <li>
+          <p>
+            Not every function has a derivative at every point.  For example, if <m>g(x)=|x|</m>, then <m>g'(0)</m> does not exist. 
+          </p>
+        </li>
+        <li>
+          <p>
+            One reason that <m>g'(0)</m> does not exist is that when we zoom in on the point <m>(0,0)</m> on the graph of <m>y=g(x)</m>, there is a sharp corner on the graph at which the function's slope <q>jumps</q> from <m>-1</m> to the left of <m>x=0</m> to <m>+1</m> to the right of <m>x = 0</m>.
+ 
+          </p>
+        </li>
+      </ul>
+    </p>
+
+      <activity xml:id="sec-deriv-pt-DC-Act3">
+        <statement>
+          
+          <ol marker="a.">
+            <li>
+              <p>
+                Let <m>f(x) = -2x^2 + 3x - 4</m>.  Use the limit definition of the derivative to determine <m>f'(1)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Let <m>g(x) = x^3</m>.  Use the limit definition of the derivative to determine the slope of the tangent line to <m>y = g(x)</m> at the point <m>(-1,-1)</m>.  Hint<fn><m>g(-1+h) = (-1+h)^3 = -1 + 3h - 3h^2 + h^3</m></fn>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Let <m>r(x) = \frac{2}{x+3}</m>. Use the limit definition of the derivative to determine the instantaneous rate of change of <m>r</m> at the instant <m>x = 0</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Let <m>p(x) = 2^x</m>.  The limit definition of the derivative shows that 
+                <me>
+                  p'(0) = \lim_{h \to 0} \frac{p(0+h) - p(0)}{h} = \lim_{h \to 0} \frac{2^{0+h} - 2^0}{h} = \lim_{h \to 0} \frac{2^h - 1}{h}
+                </me>.
+                Notice that there is no algebra that can be done to remove a factor of <m>h</m> from the numerator, so this limit can’t be evaluated exactly.  Use small values of <m>h</m> to find an estimate of <m>p'(0)</m> that is accurate to within <m>0.001</m>.  Then, plot <m>p(x)=2^x</m> and its tangent line at <m>(0,1)</m> to confirm that the estimate of <m>p'(0)</m> is reasonable.
+              </p>
+            </li>
+            <li>
+              <p>
+                Let <m>f(x) = \sqrt{x+1}</m>.  Use the limit definition of the derivative to determine <m>f'(3)</m>.  Hint <fn>To simplify the difference quotient, a helpful step is to multiply the numerator by <m>\frac{\sqrt{4+h}+2}{\sqrt{4+h}+2}</m></fn>.
+              </p>
+            </li>
+          </ol>
+          <xref provisional="need to add answers and solutions"/>
+        </statement>
+      </activity>
+
+    <exercises>
+      <title>Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act3">Activity</xref>. </title>
+      <xref provisional="need a peer-instruction format that's an alternative to exercises (don't reveal answers)"/>
+
+      <exercise xml:id="sec-deriv-pt-DC-Act1-CQ5" label="DC-Act1-CQ5">
+        <title>Clicker Question 5</title>
+        <statement>
+          <p>
+            Let 
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            Only 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            Only 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            None 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            Only 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        </choices>
+<!--        <hint>
+          <p>
+            Hint?
+          </p>
+        </hint> -->
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-DC-Act1-CQ6" label="DC-Act1-CQ6">
+        <title>Clicker Question 6</title>
+        <statement>
+          <p>
+            For 
+            Which of the following statements is true?    
+          </p>
+        </statement>
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            a
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            b 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            c
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            d
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct.
+          </p>
+        </feedback>
+        </choice>
+        </choices>
+<!--        <hint>
+          <p>
+            Hint?
+          </p>
+        </hint> -->
+      </exercise>
+
+    </exercises>
+
+
+    </subsection>
+
+  </subsection>
+
+
+  <subsection>
+    <title>After Class</title>
+    <p>
+      Here we provide
+    </p>
+      <xi:include href="./exercises/ex-deriv-pt.ptx" />
+  </subsection>
 
 </section>
