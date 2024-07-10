@@ -84,10 +84,11 @@ window.MathJax = {
 </div>
 <script type="text/doenetml">
           <setup>
-<selectFromSequence name="a" from="2" to="5"/>
-<selectFromSequence name="c" from="-3" to="3"/>  
+<selectFromSequence name="a" from="-7" to="-3"/>
+<selectFromSequence name="b" from="2" to="6"/>  
+<selectFromSequence name="c" from="-3" to="3" exclude="0"/>  
 <function name="f">
-    $a*x - x^2
+    $a*x + $b
   </function>
   <derivative name="fP">$f</derivative>  
 </setup>
@@ -107,10 +108,10 @@ window.MathJax = {
       which of the following is the simplest possible expression for <m>f($c+h)</m>?</p>
             <answer>
               <choiceInput>
-                <choice><m>f($c+h) = $a($c+h)-($c+h)^2 </m></choice>
-                <choice><m>f($c+h)=  - h^2 + <math simplify> $c($a-$c) + $a*h </math></m>  </choice>
-                <choice><m>f($c+h)=   h^2 + <math simplify> $c($a-$c) + ($a-2$c)*h </math></m>  </choice>
-                <choice credit="1"><m>f($c+h)=   -h^2 + <math simplify> $c($a-$c) + ($a-2$c)*h </math></m>  </choice> 
+                <choice><m>f($c+h) = $a($c+h) + $b </m></choice>
+                <choice credit="1"><m>f($c+h)=  <math simplify> $a*$c + $b + $a*h</math></m>  </choice>
+                <choice><m>f($c+h)=  <math simplify> -$a*$c + $b + $a*h</math></m>  </choice>
+                <choice><m>f($c+h)=  <math simplify> $a*$c + $b - $a*h</math></m>  </choice>> 
               </choiceInput>
             </answer>  
       </li>
@@ -118,10 +119,10 @@ window.MathJax = {
       <p>Which of the following is the simplest possible expression for <m>f($c+h) - f($c)</m>?</p>
             <answer>
               <choiceInput>
-                <choice><m>f($c+h) - f($c) = $a($c+h)-($c+h)^2 + <math simplify>-1*$$f($c)</math> </m></choice>
-                <choice><m>f($c+h) - f($c) =  - h^2 + <math simplify>$a*h </math></m>  </choice>
-                <choice credit="1"><m>f($c+h)  - f($c) =   -h^2 + <math simplify> ($a-2$c)*h </math></m>  </choice> 
-                <choice><m>f($c+h) - f($c) =   h^2 + <math simplify>($a-2$c)*h </math></m>  </choice>  
+                <choice><m>f($c+h) - f($c) = $a($c+h) + $b - (<math simplify="numbers">$a*$c+$b</math>) </m></choice>
+                <choice><m>f($c+h) - f($c) =  <math simplify>-$a*h </math></m>  </choice>
+                <choice credit="1"><m>f($c+h) - f($c) =  <math simplify>$a*h </math></m>  </choice>
+                <choice><m>f($c+h) - f($c) =  <math simplify>$a*h + 2*$b </math></m>  </choice>  
               </choiceInput>
             </answer>   
       </li>
@@ -132,10 +133,10 @@ window.MathJax = {
       </when></award></answer></p>
       </li>
       <li>
-        <p>Further, factoring the numerator and simplifying, we see that</p>
+        <p>Now simplifying, we see that</p>
         <p>  <m>f'($c)= \displaystyle \lim_{h \to 0} </m> <mathInput name="simp_x1"></mathInput>
       <answer><award><when>$simp_x1 = 
-        ($$f($c+h) - $$f($c))/h
+        $a
       </when></award></answer></p>
       </li>
       <li>
