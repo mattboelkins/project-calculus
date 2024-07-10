@@ -54,9 +54,90 @@
         This worked example introduces how to apply the limit definition of the derivative to a quadratic function.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1kengWagJtnYu25DQtEBU9lM3TSvUH_VU0Piwjoxr2pQ/edit?usp=sharing">in this Google document</url>.
       </p>
 
-      <xref provisional="sample Parsons problem?"/>
-
     </exploration>
+
+    <exercises>
+      <title>Questions to be embedded in <xref ref="sec-deriv-pt-BA2">Exploration</xref></title>
+        <exercise label="limit-def-deriv-steps" adaptive="yes">
+        <title>Parsons Problem, Limit Definition of the Derivative</title>
+        <idx>derivative</idx>
+        <statement>
+          <p>
+            Drag the steps into the correct order.
+          </p>
+        </statement>
+        <blocks>
+        <block order="2">
+        <p>
+          State the limit definition of the derivative, <me>f'(a)=\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}</me>
+        </p>
+        </block>
+        <block order="4">
+        <p>
+          Identify that <m>a=2</m>.
+        </p>
+        </block>
+        <block order="6">
+        <p>
+          Determine expressions for <m>f(2)</m> and <m>f(2+h)</m>.
+        </p>
+        </block>
+        <block order="5">
+        <p>
+          Calculate <m>f(2+h)-f(2)</m> and simplify.
+        </p>
+        </block>
+        <block order="7">
+        <p>
+          Remove a factor of <m>h</m>
+        </p>
+        </block>
+        <block order="3">
+        <p>
+          Simplify the difference quotient to eliminate the <m>h</m> in the denominator.
+        </p>
+        </block>
+        <block order="1">
+          <p>
+            Take the limit as <m>h</m> goes to <m>0</m>.
+          </p>
+          </block>
+        </blocks>
+      </exercise>
+
+      <exercise label="matching-parts-of-limit-def-deriv">
+        <title>Matching Problem, Pieces of the Limit Definition of the Derivative</title>
+        <idx>matching derivative pieces</idx>
+        <statement>
+          <p>
+            Match each expression with its meaning.
+          </p>
+        </statement>
+        <!-- <feedback>
+          <p>
+            Did you compute the derivative of each function in the premises (left column)?
+          </p>
+        </feedback> -->
+        <matches>
+        <match order="3">
+            <premise><m>f(2+h)-f(2)</m></premise>
+            <response>Change in y-values</response>
+          </match>
+        <match order="1">
+            <premise><m>h</m></premise>
+            <response>Change in x-values</response>
+          </match>
+        <match order="2">
+        <premise><me>\lim_{h\to 0} \frac{f(2+h)-f(2)}{h}</me></premise>
+        <response>Slope of the tangent line to <m>f</m> at <m>x=2</m></response>
+        </match>
+        <match order="4">
+        <premise><me>\frac{f(2+h)-f(2)}{h}</me></premise>
+        <response>Slope of the secant line between <m>(2,f(2))</m> and <m>(2+h,f(2+h))</m></response>
+        </match>
+        </matches>
+      </exercise>
+    </exercises>
 
     <p>
       To use the limit definition of the derivative to calculate <m>f'(2)</m> for <m>f(x) = x - x^2</m>, we execute the following steps.
@@ -109,7 +190,7 @@
     </exploration>
 
     <exercises>
-      <title>Questions to be embedded in <xref ref="sec-deriv-pt-BA1">Exploration</xref>. </title>
+      <title>Questions to be embedded in <xref ref="sec-deriv-pt-BA3">Exploration</xref>. </title>
 
       <exercise xml:id="sec-deriv-pt-BA3-fillin1" label="BA3-fillin1">
         <title>Q1</title>
@@ -1086,10 +1167,9 @@
 
   <subsection>
     <title>After Class</title>
-    <p>
-      Here we provide
-    </p>
+
       <xi:include href="./exercises/ex-deriv-pt.ptx" />
+
   </subsection>
 
 </section>
