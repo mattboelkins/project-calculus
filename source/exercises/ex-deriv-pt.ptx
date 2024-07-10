@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-deriv-pt">
 
-<exercise xml:id="ex-deriv-pt-name">
-  <title>Title</title>
-     <interactive xml:id="doenet-interactive-exercise-deriv-pt-name1" platform="doenetml">
-      <slate surface="doenetml">
-        <xi:include href="./doenet/ex-deriv-pt-name1.ptx" parse="text"/>
-      </slate>   
-    </interactive>  
-</exercise> 
+  <title>Practice Exercises</title>
+
+      <exercise label="matching-parts-of-a-graph-to-numbers-rational-1">
+        <title>Matching meaning to numerical values</title>
+        <statement>
+          <p>
+            Let <m>y = r(x)</m> be given by the following graph.
+          </p>
+          <figure>
+            <caption>Plot of <m>y = r(x)</m> and some of its tangent lines.</caption>
+            <image width="50%" source="images/deriv-pt-ex-5-graph.jpg" />
+          </figure>
+          <p>
+            Match each expression with its meaning.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Think about each of quantities corresponding to a slope on the graph.
+          </p>
+        </feedback>
+        <matches>
+        <match order="3">
+            <premise>The instantaneous rate of change of <m>r</m> when <m>x=0</m></premise>
+            <response><m>0.568</m></response>
+        </match>
+        <match order="1">
+            <premise><m>r'(3)</m></premise>
+            <response><m>0</m></response>
+        </match>
+        <match order="4">
+            <premise>The average rate of change of <m>r</m> on the interval <m>[0,3]</m></premise>
+            <response><m>0.9231</m></response>
+        </match>
+        <match order="2">
+            <premise>The slope of the tangent line to <m>y=r(x)</m> at the point where <m>x=5</m></premise>
+            <response><m>-1</m></response>
+            </match>
+        <match order="6">      
+            <premise>The average rate of change of <m>r</m> on the interval <m>[3,7]</m></premise>
+            <response><m>-\frac{4}{5}</m></response>
+        </match>
+        <match order="5">
+            <premise>The slope of the secant line between the points <m>(0,r(0)</m> and <m>(5, r(5))</m></premise>
+            <response><m>0.1538</m></response>
+        </match>
+        </matches>
+      </exercise>
+
+  <exercise xml:id="ex-deriv-pt-name2">
+    <title>Using the limit definition of the derivative with a linear function</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name2" platform="doenetml">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-pt-name2.ptx" parse="text"/>
+        </slate>   
+      </interactive>  
+  </exercise> 
+
+  <exercise xml:id="ex-deriv-pt-name1">
+    <title>Using the limit definition of the derivative with a quadratic function</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name1" platform="doenetml">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-pt-name1.ptx" parse="text"/>
+        </slate>   
+      </interactive>  
+  </exercise> 
+
 
 </exercises>
