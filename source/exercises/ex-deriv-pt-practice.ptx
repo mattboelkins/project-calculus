@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-deriv-pt-practice">
+
+  <title>Practice Exercises</title>
+
+      <exercise xml:id="sec-deriv-pt-PrEx1">
+        <title>Interpreting function and derivative values</title>
+        <statement>
+          <p>
+            If <m>g(x)</m> is a function for which <m>g(3)=5</m> and <m>g'(3)=-2</m>, then
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            The point <m>(3,-2)</m> lies on the graph of <m>y = g(x)</m> and the slope of the tangent line to <m>y = g(x)</m> at <m>x = 3</m> is <m>5</m>. 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  If <m>g(a) = b</m>, that means <m>(a,b)</m> lies on the graph of <m>y = g(x)</m>.  Also, the value of <m>g'(3)</m> tells us the slope of the tangent line at <m>x = 3</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            The point <m>(5,3)</m> lies on the graph of <m>y = g(x)</m> and the slope of the tangent line to <m>y = g(x)</m> at <m>x = 3</m> is <m>5</m>. 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  If <m>g(a) = b</m>, that means <m>(a,b)</m> lies on the graph of <m>y = g(x)</m> -- the order of <m>a</m> and <m>b</m> matters.  Also, the value of <m>g'(3)</m> tells us the slope of the tangent line at <m>x = 3</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            The point <m>(3,5)</m> lies on the graph of <m>y = g(x)</m> and the slope of the tangent line to <m>y = g(x)</m> at <m>x = 3</m> is <m>-2</m>. 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s correct.  The statement that <m>g(3) = 5</m> means that <m>(3,2)</m> lies on the graph of <m>y = g(x)</m>.  In addition, <m>g'(3) = -2</m> measures the slope of the tangent line to <m>y = g(x)</m> at <m>(3, g(3))</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+          <statement>
+          <p>
+            The point <m>(5,3)</m> lies on the graph of <m>y = g(x)</m> and the slope of the tangent line to <m>y = g(x)</m> at <m>x = 3</m> is <m>-2</m>. 
+          </p>
+          </statement>
+          <feedback>
+            That's incorrect.  If <m>g(a) = b</m>, that means <m>(a,b)</m> lies on the graph of <m>y = g(x)</m> -- the order of <m>a</m> and <m>b</m> matters. (The slope of the tangent line is correct.)
+          </feedback>
+        </choice>
+        </choices>
+      </exercise>
+
+      <exercise label="sec-deriv-pt-PrEx2">
+        <title>Statements about position and velocity of a biker</title>
+        <statement>
+          <p>
+            A biker riding along a straight road has position function <m>s(t)</m> that measures its location (in feet) from the start of the ride in feet at time <m>t</m> in minutes.  It is known that <m>s(5) = 6000</m> and <m>s'(5) = 1450</m>.  
+          </p>
+
+          <p>
+            Match each of the following statements to their correct meaning.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            The values of <m>s(t)</m> determine the position of the biker at different points in time; the given value of <m>s'(t)</m> determine's the biker's instantaneous velocity.
+          </p>
+        </feedback>
+        <matches>
+        <match order="3">
+            <premise><m>s(5) = 6000</m></premise>
+            <response>At the instant that <m>t = 5</m> minutes, the biker has traveled <m>6000</m> feet along the road from its starting point.
+            </response>
+        </match>
+        <match order="1">
+            <premise><m>s(0) = 0</m></premise>
+            <response>At the start of their ride, the biker has traveled <m>0</m> feet.</response>
+        </match>
+        <match order="4">
+            <premise><m>\frac{s(5)-s(0)}{5-0} = \frac{6000}{5} = 1200</m></premise>
+            <response>The biker’s average velocity on <m>[0,5]</m> is <m>1200</m> feet per minute</response>
+        </match>
+        <match order="2">
+            <premise><m>s'(5) = 1450</m></premise>
+            <response>The biker's instantaneous velocity at <m>t = 5</m> is <m>1450</m> feet per minute</response>
+            </match>
+        </matches>    
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-PrEx3">
+        <title>Interpreting function and derivative values for a quadratic</title>
+        <statement>
+          <sidebyside widths="40% 40%">
+          <p>
+            <p>
+              Consider the function <m>y = g(x)</m> given by this graph.
+            </p>
+            <p>
+              Which of the following statements is true?
+            </p>
+          </p>
+          <image source="images/deriv-pt-PrEx-3-graph.jpg" />
+          </sidebyside>
+        </statement>
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>g'(-5) = 0</m> and <m>g'(-1) = 0</m> 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  While it's true that <m>g(-5) = 0</m> and <m>g(-1) = 0</m>, remember that derivative values measure slopes of tangent lines.
+          </p>
+        </feedback>
+        </choice>
+
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>g'(-5)</m> is positive and <m>g'(-1)</m> is negative. 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's correct.  The slope of the tangent line to <m>y = g(x)</m> at <m>x = -5</m> is positive, and similarly the slope of the tangent line to <m>y = g(x)</m> at <m>x = -1</m> is negative.
+          </p>
+        </feedback>
+        </choice>
+
+        <choice>
+        <statement>
+          <p>
+            There is no value of <m>a</m> for which <m>g'(a) = 0</m>.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s incorrect.  Anywhere that <m>y = g(x)</m> has a horizontal tangent line, the value of <m>g'(a)</m> will be <m>0</m>.
+          </p>
+        </feedback>
+        </choice>
+
+        <choice>
+          <statement>
+          <p>
+            <m>g'(-5)</m> is negative and <m>g'(-1)</m> is positive.  
+          </p>
+          </statement>
+          <feedback>
+            That's incorrect. The derivative measures the slope of the tangent line; if the tangent line rises as we move from left to right, the slope is positive.
+          </feedback>
+        </choice>
+
+        </choices>
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-PrEx4">
+        <title>Interpreting function and derivative values for a polynomial</title>
+        <statement>
+          <sidebyside widths="40% 40%">
+          <p>
+            <p>
+              Consider the function <m>y = p(x)</m> given by this graph.  
+            </p>
+            <p>
+              The values of <m>a</m> where <m>p'(a) = 0</m> are:
+            </p>
+          </p>
+          <image source="images/deriv-pt-PrEx-4-graph.jpg" />
+          </sidebyside>
+        </statement>
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>a \approx -1.75</m>, <m>a \approx 2.4</m>, and <m>a \approx 3.4</m> 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  Those values are where <m>g(a) = 0</m>.  Think about how <m>g'(a)</m> measures a certain slope.
+          </p>
+        </feedback>
+        </choice>
+
+        <choice>
+        <statement>
+          <p>
+            <m>a = -1</m> and <m>a = 3</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            While it's true that <m>p'(a) = 0</m> at those locations, there is another value of <m>a</m> where <m>p(x)</m> has a horizontal tangent line.
+          </p>
+        </feedback>
+        </choice>
+
+        <choice>
+        <statement>
+          <p>
+            There are no values of <m>a</m> for which <m>p'(a) = 0</m>.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s incorrect.  Anywhere that <m>y = p(x)</m> has a horizontal tangent line, the value of <m>p'(a)</m> will be <m>0</m>.
+          </p>
+        </feedback>
+        </choice>
+
+        <choice correct="yes">
+          <statement>
+          <p>
+            <m>a = -1</m>, <m>a = 1</m>, and <m>a = 3</m>
+          </p>
+          </statement>
+          <feedback>
+            That's correct. At each of these three locations, <m>y = g(x)</m> has a horizontal tangent line with slope <m>0</m>.
+          </feedback>
+        </choice>
+
+        </choices>
+      </exercise>
+
+      <exercise label="matching-parts-of-a-graph-to-numbers-rational-1">
+        <title>Matching meaning to numerical values</title>
+        <statement>
+          <p>
+            Let <m>y = r(x)</m> be given by the following graph.
+          </p>
+          <figure>
+            <caption>Plot of <m>y = r(x)</m> and some of its tangent lines.</caption>
+            <image width="50%" source="images/deriv-pt-ex-5-graph.jpg" />
+          </figure>
+          <p>
+            Match each expression with its meaning.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Think about each of quantities corresponding to a slope on the graph.
+          </p>
+        </feedback>
+        <matches>
+        <match order="3">
+            <premise>The instantaneous rate of change of <m>r</m> when <m>x=0</m></premise>
+            <response><m>0.568</m></response>
+        </match>
+        <match order="1">
+            <premise><m>r'(3)</m></premise>
+            <response><m>0</m></response>
+        </match>
+        <match order="4">
+            <premise>The average rate of change of <m>r</m> on the interval <m>[0,3]</m></premise>
+            <response><m>0.9231</m></response>
+        </match>
+        <match order="2">
+            <premise>The slope of the tangent line to <m>y=r(x)</m> at the point where <m>x=5</m></premise>
+            <response><m>-1</m></response>
+            </match>
+        <match order="6">      
+            <premise>The average rate of change of <m>r</m> on the interval <m>[3,7]</m></premise>
+            <response><m>-\frac{4}{5}</m></response>
+        </match>
+        <match order="5">
+            <premise>The slope of the secant line between the points <m>(0,r(0)</m> and <m>(5, r(5))</m></premise>
+            <response><m>0.1538</m></response>
+        </match>
+        </matches>
+      </exercise>
+
+  <exercise xml:id="ex-deriv-pt-name2">
+    <title>Using the limit definition of the derivative with a linear function</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name2" platform="doenetml">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-pt-name2.ptx" parse="text"/>
+        </slate>   
+      </interactive>  
+  </exercise> 
+
+  <exercise xml:id="ex-deriv-pt-name1">
+    <title>Using the limit definition of the derivative with a quadratic function</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name1" platform="doenetml">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-pt-name1.ptx" parse="text"/>
+        </slate>   
+      </interactive>  
+  </exercise> 
+
+  <exercise xml:id="ex-deriv-pt-name3">
+    <title>Using the limit definition of the derivative with a rational function</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name3" platform="doenetml">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-pt-name3.ptx" parse="text"/>
+        </slate>   
+      </interactive>  
+  </exercise> 
+
+</exercises>

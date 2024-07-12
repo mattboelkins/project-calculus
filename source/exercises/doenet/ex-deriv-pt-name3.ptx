@@ -1,0 +1,91 @@
+<!--Limit Definition of the Derivative at a point - Rational Function, Scaffolded-->
+
+<setup>
+<selectFromSequence name="a" from="-5" to="5" exclude="0 1"/>
+<!--   need to exclude 1 from being the coefficient of the x so that in the denominator, a(c+h) != ac+h -->
+<selectFromSequence name="b" from="-5" to="5" exclude="0  $a"/>
+<selectFromSequence name="c" from="-3" to="3" exclude="-$b/$a"/>
+<!--   make sure we're not trying to take the derivative at the asymptote -->
+<function name="f">
+    1/($a x+$b)
+  </function>
+<derivative name="fP">$f</derivative>
+<math name="fofcplushdenom" simplify> $a*$c+$b+$a h</math>
+<math name="fofcdenom" simplify>$a*$c+$b</math>
+<math name="numerator" simplify> $fofcdenom-$fofcplushdenom</math>
+<math name="simpdiffquot"> -$a/($fofcdenom*$fofcplushdenom)</math>
+</setup>
+
+  <p>
+    Consider the function <m>f(x) = $f</m>.  We are going to use the limit definition of the derivative to determine <m>f'($c)</m>.
+
+    <ol marker="a.">
+      <li>
+        <p>
+          Recall that the limit definition of <m>f'($c)</m> is
+          <me> f'($c) = \lim_{h \to 0} \frac{f($c+h)-f($c)}{h} </me>
+          and thus we need to determine expressions for <m>f($c+h)</m> and <m>f($c+h) - f($c)</m>.
+        </p>
+
+        <p>Using the given formula <m>f(x) = $f</m>,
+      which of the following is the simplest possible expression for <m>f($c+h)</m>?</p>
+            <answer>
+              <choiceInput shuffleOrder>
+                <choice><math format="latex">f($c+h) = \frac{1}{$a($c+h)+$b} </math></choice>
+                <choice><m>f($c+h)=  \frac{1}{<math simplify>$a*$c+$b</math>+h}</m>  </choice>
+                <choice><math format="latex">f($c+h) = \frac{1}{$a($c)+$b+h} </math></choice>
+                <choice credit="1"><m>f($c+h) = <math format="latex" simplify>\frac{1}{$a($c)+$b+$a h} </math></m></choice>
+              </choiceInput>
+            </answer>
+      </li>
+      <li>
+        <p> Note that <math format="latex">f($c)=\frac{1}{$a($c)+$b}=\frac{1}{$fofcdenom}</math>.
+<!--         and so <me>f($c+h)-f($c)=\frac{1}{$fofcplushdenom}-\frac{1}{$fofcdenom}.</me> -->
+      </p>
+      <p>Which of the following is the common denominator for <m>f($c+h) - f($c)</m>?</p>
+            <answer>
+              <choiceInput shuffleOrder>
+                <choice><m>$fofcdenom+($fofcplushdenom)</m></choice>
+                <choice><m>$fofcdenom+($fofcdenom+h)</m>  </choice>
+                <choice credit="1"><math>$fofcdenom*$fofcplushdenom </math>  </choice>
+                <choice><m>$fofcdenom($fofcdenom+h) </m>  </choice>
+              </choiceInput>
+            </answer>
+      </li>
+      <li>
+      <p>Which of the following is the best (simplest needed) expression for <m>f($c+h) - f($c)</m>?</p>
+            <answer name="difference">
+              <choiceInput shuffleOrder>
+                <choice feedbackText="Use the common denominator to subtract these fractions."><math format="latex">f($c+h) - f($c) = \frac{1}{$fofcplushdenom}-\frac{1}{$fofcdenom}</math></choice>
+                <choice credit="1" feedbackText="Correct! It is best not to multiply out the denominator, and the numerator is simplified as much as possible."><math format="latex">f($c+h) - f($c) =  \frac{$numerator}{$fofcdenom*$fofcplushdenom}</math>  </choice>
+                <choice feedbackText="Check that you've distributed the negative sign when you subtract."><m>f($c+h) - f($c) =</m> <math format="latex" simplify="numbers">  \frac{-$numerator}{$fofcdenom*$fofcplushdenom}</math>    </choice>
+                <choice feedbackText="Continue to simplify the numerator."><math format="latex">f($c+h) - f($c) =  \frac{$fofcdenom-$fofcplushdenom}{$fofcdenom*$fofcplushdenom}</math>  </choice>
+              </choiceInput>
+            </answer>
+        <copy source="difference.feedbacks"/>
+      </li>
+      <li> <p>Next, apply the limit definition of the derivative by substituting the simplest possible expression for <m>f($c+h)-f($c)</m> in the space provided:</p>
+<!--         <math> ((-$a h)/($fofcdenom*$fofcplushdenom))/h </math> -->
+        <p><m>f'($c)= \displaystyle \lim_{h \to 0} \frac{f($c+h)-f($c)}{h} = \lim_{h \to 0} </m> <mathInput name="dq_x1" prefill="/h"></mathInput>
+      <answer><award symbolicEquality simplifyOnCompare><when>$dq_x1 =
+         <math>((-1*$a h)/($fofcdenom*$fofcplushdenom))/h</math>
+      </when></award></answer></p>
+<!--         <feedback condition="$dq_x1 = <math> -$a/($fofcdenom*$fofcplushdenom)</math> and $dq_x1.responseHasBeenSubmitted">
+  Don't divide the h's... just substitute the numerator.
+</feedback> -->
+<!--         above feedback doesn't get triggered when I want it to, but we should add some feedback of this kind -->
+      </li>
+      <li>
+        <p>Further simplifying, we see that</p>
+        <p>  <m>f'($c)= \displaystyle \lim_{h \to 0} </m> <mathInput name="simp_x1"></mathInput>
+      <answer><award symbolicEquality simplifyOnCompare><when>$simp_x1 =
+        <math> -$a/($fofcdenom*$fofcplushdenom)</math>
+      </when></award></answer></p>
+      </li>
+      <li>
+        <p>Finally, evaluating the limit by letting <m>h \to 0</m>, we determine the value of <m>f'($c)</m>:</p>
+        <p><m>f'($c) = </m> <answer>$$fP($c)</answer></p>
+      </li>
+
+    </ol>
+  </p>
