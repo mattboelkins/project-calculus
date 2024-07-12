@@ -29,11 +29,11 @@
     <title>Before Class</title>
     <exploration xml:id="sec-deriv-pt-BA1">
       <p>
-        This beginning activity will introduce the limit definition of the derivative using an animation with embedded questions.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1m9_N7AeLF2Xugtb7fjNntLfFTcfzFyL1IoeU22h-33g/edit?usp=sharing">in this Google document</url>.
+        This beginning activity introduces the limit definition of the derivative using an animation with embedded questions.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1m9_N7AeLF2Xugtb7fjNntLfFTcfzFyL1IoeU22h-33g/edit?usp=sharing">in this Google document</url>.
       </p>
     </exploration>
 
-    <xref provisional="decide what to call pre-class activities (explorations, beginning activities, etc)"/>
+    <xref provisional="decide what to call before-class activities"/>
 
     <p>
       For a function <m>f</m>, the <term>derivative of <m>f</m> evaluated at <m>x = a</m></term>
@@ -51,15 +51,15 @@
 
     <exploration  xml:id="sec-deriv-pt-BA2">
       <p>
-        This worked example introduces how to apply the limit definition of the derivative to a quadratic function.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1kengWagJtnYu25DQtEBU9lM3TSvUH_VU0Piwjoxr2pQ/edit?usp=sharing">in this Google document</url>.
+        This worked example demonstrates how to apply the limit definition of the derivative to a quadratic function.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1kengWagJtnYu25DQtEBU9lM3TSvUH_VU0Piwjoxr2pQ/edit?usp=sharing">in this Google document</url>.
       </p>
 
     </exploration>
 
-    <exercises>
-      <title>Questions to be embedded in <xref ref="sec-deriv-pt-BA2">Exploration</xref></title>
+    <p>Questions to be embedded in <xref ref="sec-deriv-pt-BA2">Exploration</xref></p>
+
         <exercise label="limit-def-deriv-steps" adaptive="yes">
-        <title>Parsons Problem, Limit Definition of the Derivative</title>
+        <title>Parsons Problem, applying the limit definition of the derivative</title>
         <idx>derivative</idx>
         <statement>
           <p>
@@ -106,7 +106,7 @@
       </exercise>
 
       <exercise label="matching-parts-of-limit-def-deriv">
-        <title>Matching Problem, Pieces of the Limit Definition of the Derivative</title>
+        <title>Matching Problem, meaning of parts of the limit definition of the derivative</title>
         <idx>matching derivative pieces</idx>
         <statement>
           <p>
@@ -137,13 +137,12 @@
         </match>
         </matches>
       </exercise>
-    </exercises>
 
     <p>
-      To use the limit definition of the derivative to calculate <m>f'(2)</m> for <m>f(x) = x - x^2</m>, we execute the following steps.
+<!--      To use the limit definition of the derivative to calculate <m>f'(2)</m> for <m>f(x) = x - x^2</m>, we execute the following steps. -->
 
       <table>
-        <title>Finding <m>f'(2)</m> for <m>f(x) = x - x^2</m>.</title>
+        <title>Summary of <xref ref="sec-deriv-pt-BA2">Exploration</xref>: finding <m>f'(2)</m> for <m>f(x) = x - x^2</m>.</title>
         <tabular>
           <col halign="right" />
           <col halign="left" />
@@ -187,13 +186,19 @@
         This guided example leads students to apply the limit definition of the derivative to a rational function.  A draft of the text and images for the animation/video can be found <url href="https://docs.google.com/document/d/1p_egMo87QQ1HR2pNyAiIv-ldE06jOlqWdbKHRgpZJrk/edit?usp=sharing">in this Google document</url>.
       </p>
 
+      <figure>
+          <caption>Mock-up video for animation</caption>
+          <video xml:id="sec-deriv-pt-BA3-animation" label="youtube-BA3-animation" youtube="lduFW7x0eCk" />
+      </figure>
+
     </exploration>
 
-    <exercises>
-      <title>Questions to be embedded in <xref ref="sec-deriv-pt-BA3">Exploration</xref>. </title>
+      <p>
+        Questions to be embedded in <xref ref="sec-deriv-pt-BA3">Exploration</xref>.
+      </p>
 
       <exercise xml:id="sec-deriv-pt-BA3-fillin1" label="BA3-fillin1">
-        <title>Q1</title>
+        <title>Q1: evaluating the function at <m>x=3</m></title>
         <statement>
           <p>
             For <m>f(x) = \frac{1}{x-1}</m>, the value of <m>f(3)</m> is <var width="10" />.
@@ -227,7 +232,7 @@
       </exercise>  
 
       <exercise xml:id="sec-deriv-pt-BA3-MC1" label="BA3-MC1">
-        <title>Q2</title>
+        <title>Q2: evaluating the function at <m>x = 3+h</m></title>
         <statement>
           <p>
             For <m>f(x) = \frac{1}{x-1}</m>, the simplest expression for <m>f(3+h)</m> is
@@ -244,7 +249,7 @@
         </statement>
         <feedback>
           <p>
-            While that equation is true, the result is not the most simplified expression.
+            While that equation is true, the result is not the most simplified expression.  Try combining the constant terms in the denominator.
           </p>
         </feedback>
         </choice>
@@ -296,7 +301,7 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-BA3-MC2" label="BA3-MC2">
-        <title>Q3</title>
+        <title>Q3: finding a common denominator</title>
         <statement>
           <p>
             To subtract the fractions <m>\frac{1}{2+h}</m> and <m>\frac{1}{2}</m>, the needed common denominator is
@@ -367,7 +372,8 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-BA3-MC3" label="BA3-MC3">
-        <title>Q4</title>
+        <title>Q4: simplifying the numerator of the difference quotient
+        </title>
         <statement>
           <p>
             The quantity <m>2 - (2+h)</m> simplifies to
@@ -433,7 +439,7 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-BA3-MC4" label="BA3-MC4">
-        <title>Q5</title>
+        <title>Q5: evaluating the limit</title>
         <statement>
           <p>
             Evaluating the limit as <m>h \to 0</m> in <m>f'(3) = \displaystyle \lim_{h \to 0} \frac{-1}{(2+h) \cdot 2}</m> shows that
@@ -498,17 +504,15 @@
         </hint>
       </exercise>
 
-    </exercises>
 
     <figure xml:id="F-sec-deriv-pt-after-BA3">
       <caption>Summary of the result of <xref ref="sec-deriv-pt-BA3">Exploration</xref></caption>
-        <sidebyside widths="45% 45%" margins="0% 0%">
-          <image source="images/deriv-pt-BA3-tan-line.jpg" />
- 
+        <sidebyside widths="45% 45%" valign="bottom" margins="0% 0%">
           <p>
             For the function <m>f(x) = \frac{1}{x-1}</m>, the limit definition of the derivative shows that <m>f'(3)=-\frac{1}{4}</m>, which is the slope of the tangent line to <m>y = f(x)</m> at the point <m>(3, f(3)) = (3, \frac{1}{2})</m>.  The fact that  <m>f'(3)=-\frac{1}{4}</m> also shows that at the instant <m>x = 3</m>, the function <m>y = f(x)</m> is decreasing at an instantaneous rate of <m>-\frac{1}{4}</m> units of height per <m>1</m> unit of change in <m>x</m>.
           </p>
 
+          <image source="images/deriv-pt-BA3-tan-line.jpg" />
         </sidebyside>
     </figure>
 
@@ -530,11 +534,11 @@
             <p>
               On the graph of a function <m>y = f(x)</m>, the line between the points <m>(a, f(a))</m> and <m>(b, f(b))</m> is called a <term>secant line</term>, and the slope of the secant line is the same as the average rate of change of the function from <m>x = a</m> to <m>x = b</m>, 
               <me>
-                AV_[a,b] = \frac{f(b)-f(a)}{b-a}
+                AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}
               </me>.
               Viewing <m>b = a + h</m>, the slope of the secant line on the interval <m>[a,a+h]</m> is 
               <me>
-                AV_[a,a+h] = \frac{f(a+h)-f(a)}{h}
+                AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}
               </me>.
             </p>
           </li>
@@ -549,6 +553,12 @@
             <p>
               The quantity <m>\frac{f(a+h)-f(a)}{h}</m> is often called <term>the difference quotient</term>, and this quantity measures the average rate of change of <m>f</m> on the interval <m>[a, a+h]</m>.
             </p>  
+
+            <figure>
+              <caption> The slope of the tangent line and the slope of a secant line to <m>y = f(x)</m> at the point <m>x = a</m>
+              </caption>
+             <image source="images/deriv-pt-tan-sec-summary.jpg" width="80%"/>
+            </figure>
           </li>
           <li>
             <p>
@@ -587,12 +597,15 @@
         </statement>
       </activity>
 
-    <exercises>
-      <title>Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act1">Activity</xref>. </title>
-      <xref provisional="need a peer-instruction format that's an alternative to exercises (don't reveal answers)"/>
+      <p>
+        <alert>
+          Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act1">Activity</xref>
+        </alert>. 
+      </p>
+      <xref provisional="need a peer-instruction question format"/>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ1" label="DC-Act1-CQ1">
-        <title>Clicker Question 1</title>
+        <title>Clicker Question 1: the difference quotient of a linear function</title>
         <statement>
           <p>
             Consider a function <m>y = f(x)</m>.  Which of the following statements is true about the quantity <m>\frac{f(5+h)-f(5)}{h}</m>?
@@ -658,7 +671,7 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ2" label="DC-Act1-CQ2">
-        <title>Clicker Question 2</title>
+        <title>Clicker Question 2: rates of change of a linear function</title>
         <statement>
           <p>
             Let <m>f(x) = 3 - 2x</m>.  Consider the following statements.
@@ -749,10 +762,9 @@
         </hint> -->
       </exercise>
 
-    </exercises>
 
     <p>
-      Summary of important ideas regarding the derivative of a linear function.
+      Summary of important ideas regarding linear functions.
       <ul>
         <li>
           <p>
@@ -761,7 +773,7 @@
         </li>
         <li>
           <p>
-            More generally, for any linear function of form <m>f(x) = mx + b</m>b, <m>f'(a) = m</m> for any choice of <m>a</m>.  Said differently, the value of the derivative of any linear function at any chosen input is the slope of the line.
+            More generally, for any linear function of form <m>f(x) = mx + b</m>, <m>f'(a) = m</m> for any choice of <m>a</m>.  Said differently, the value of the derivative of any linear function at any chosen input is the slope of the line.
           </p>
         </li>
       </ul>
@@ -811,12 +823,14 @@
         </statement>
       </activity>
 
-    <exercises>
-      <title>Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act2">Activity</xref>. </title>
-      <xref provisional="need a peer-instruction format that's an alternative to exercises (don't reveal answers)"/>
+      <p>
+        <alert>
+          Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act2">Activity</xref>
+        </alert>. 
+      </p>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ3" label="DC-Act1-CQ3">
-        <title>Clicker Question 3</title>
+        <title>Clicker Question 3: the derivative of <m>g(x) = |x|</m> at different values</title>
         <statement>
           <p>
             Let <m>g(x) = |x|</m>.  Recall that if <m>x \ge 0</m>, then <m>|x| = x</m>, and if <m>x \lt 0</m>, then <m>|x| = -x</m>.  Consider the following statements.
@@ -896,7 +910,7 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ4" label="DC-Act1-CQ4">
-        <title>Clicker Question 4</title>
+        <title>Clicker Question 4: the derivative of <m>g(x)=|x|</m> at <m>x = 0</m></title>
         <statement>
           <p>
             For <m>g(x) = |x|</m>, the limit definition of the derivative shows that 
@@ -964,7 +978,6 @@
         </hint> -->
       </exercise>
 
-    </exercises>
 
     <p>
       Summary of important ideas regarding the derivative of the absolute value function.
@@ -976,9 +989,12 @@
         </li>
         <li>
           <p>
-            One reason that <m>g'(0)</m> does not exist is that when we zoom in on the point <m>(0,0)</m> on the graph of <m>y=g(x)</m>, there is a sharp corner on the graph at which the function's slope <q>jumps</q> from <m>-1</m> to the left of <m>x=0</m> to <m>+1</m> to the right of <m>x = 0</m>.
- 
+            One reason that <m>g'(0)</m> does not exist is that when we zoom in on the point <m>(0,0)</m> on the graph of <m>y=g(x)</m>, there is a sharp corner on the graph at which the function's slope <q>jumps</q> from <m>-1</m> to the left of <m>x=0</m> to <m>+1</m> to the right of <m>x = 0</m>.  Here is a graph of a similar function where a sharp corner appears at the point <m>(1,1)</m>.
           </p>
+          <figure>
+            <caption>A function whose derivative fails to exist at <m>x = 1</m>. (Image borrowed from <href ref="https://activecalculus.org/single-alt/sec-1-7-lim-cont-diff.html#ibe"><em>Active Calculus</em></href>.)</caption>
+            <image source="images/deriv-pt-no-deriv.jpg" width="75%" />
+          </figure>
         </li>
       </ul>
     </p>
@@ -1021,15 +1037,40 @@
         </statement>
       </activity>
 
-    <exercises>
-      <title>Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act3">Activity</xref>. </title>
-      <xref provisional="need a peer-instruction format that's an alternative to exercises (don't reveal answers)"/>
+      <p>
+        <alert>
+          Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act3">Activity</xref>
+        </alert>. 
+      </p>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ5" label="DC-Act1-CQ5">
-        <title>Clicker Question 5</title>
+        <title>Clicker Question 5: applying the limit definition to a quadratic function</title>
         <statement>
           <p>
-            Let 
+            Let <m>f(x)=-2x^2 + 3x - 4</m>.  Write down all of the steps required to apply the limit definition of the derivative to determine <m>f'(1)</m>.  [Nothing else appears on the screen until the instructor presses <q>NEXT</q>.]
+          </p>
+
+          <p>
+            Consider the following statements that correspond to the process of applying the limit definition of the derivative:
+          </p>
+
+          <ol marker="1.">
+            <li>
+              <m>\frac{f(1+h)-f(1)}{h} = -2h-1</m>
+            </li>
+            <li>
+              <m>\lim_{h \to 0} f(1+h)-f(1) = -1</m>
+            </li>
+            <li>
+              <m>\frac{f(1+h)-f(1)}{h} = -2h-1</m>
+            </li>
+            <li>
+              <m>f'(1)=-2</m>
+            </li>
+          </ol>
+
+          <p>
+            Which of the following statements is true?
           </p>
         </statement>
 
@@ -1038,7 +1079,7 @@
         <choice>
         <statement>
           <p>
-            Only 
+            Only (1).
           </p>
         </statement>
         <feedback>
@@ -1047,10 +1088,22 @@
           </p>
         </feedback>
         </choice>
-        <choice correct="yes">
+        <choice>
         <statement>
           <p>
-            Only 
+            Only (4). 
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.
+          </p>
+        </feedback>
+        </choice>
+        <choice  correct="yes">
+        <statement>
+          <p>
+            (1) and (3) 
           </p>
         </statement>
         <feedback>
@@ -1062,19 +1115,7 @@
         <choice>
         <statement>
           <p>
-            None 
-          </p>
-        </statement>
-        <feedback>
-          <p>
-            That's incorrect.
-          </p>
-        </feedback>
-        </choice>
-        <choice>
-        <statement>
-          <p>
-            Only 
+            (2) and (4) 
           </p>
         </statement>
         <feedback>
@@ -1092,19 +1133,54 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ6" label="DC-Act1-CQ6">
-        <title>Clicker Question 6</title>
+        <title>Clicker Question 6: applying the limit definition to a rational function</title>
         <statement>
           <p>
-            For 
-            Which of the following statements is true?    
+            Let <m>r(x)=\frac{1}{5-x}</m>.  Write down all of the steps required to apply the limit definition of the derivative to determine <m>r'(2)</m>.  [Nothing else appears on the screen until the instructor presses <q>NEXT</q>.]
           </p>
+
+          <p>
+            Consider the following statements that correspond to the process of applying the limit definition of the derivative:
+          </p>  
+
+          <ol marker="1.">
+            <li>
+              <m>\frac{r(2+h)-r(2)}{h} = \frac{\frac{1}{3-h}-\frac{1}{3}}{h}</m>
+            </li>
+            <li>
+              <m>\frac{r(2+h)-r(2)}{h} = \frac{-h}{(3-h)\cdot 3} \cdot \frac{1}{h}</m>
+            </li>
+            <li>
+              <m>\frac{r(2+h)-r(2)}{h} = \frac{h}{(3-h)\cdot 3} \cdot \frac{1}{h}</m>
+            </li>
+            <li>
+              <m>r'(2)= \lim_{h \ to 0} \frac{1}{(3-h)\cdot 3} = \frac{1}{9}</m>
+            </li>
+          </ol>
+
+          <p>
+            Which of the following statements is true?
+          </p>
+
         </statement>
 
         <choices>
         <choice>
         <statement>
           <p>
-            a
+            Only (2)
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            Only (3)
           </p>
         </statement>
         <feedback>
@@ -1116,19 +1192,7 @@
         <choice>
         <statement>
           <p>
-            b 
-          </p>
-        </statement>
-        <feedback>
-          <p>
-            That's incorrect.
-          </p>
-        </feedback>
-        </choice>
-        <choice>
-        <statement>
-          <p>
-            c
+            Only (1) and (3)
           </p>
         </statement>
         <feedback>
@@ -1140,7 +1204,7 @@
         <choice correct="yes">
         <statement>
           <p>
-            d
+            (1), (3), and (4)
           </p>
         </statement>
         <feedback>
@@ -1157,8 +1221,26 @@
         </hint> -->
       </exercise>
 
-    </exercises>
+      <p>Summary of important ideas regarding applying the limit definition of the derivative
+      </p>
 
+      <p>
+        <ul>
+          <li>
+            <p>
+              When applying the limit definition of the derivative, it's essential to correctly apply the rule for the function <m>f(x)</m> to compute <m>f(a+h)</m> for the relevant value of <m>a</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              For some nice functions, algebra can be used to simplify the difference quotient, <m>\frac{f(a+h)-f(a)}{h}</m>, to find a factor of <m>h</m> in the numerator.  Then the factor of <m>h</m> in the numerator and denominator divide to result in <m>1</m>.  From there, with no <m>h</m> in the denominator, letting <m>h \to 0</m> produces the value of <m>f'(a)</m>.
+            </p>
+            <p>
+              For other functions, it's not possible to remove a factor of <m>h</m> from the numerator of the difference quotient, so it may be necessary to estimate <m>\frac{f(a+h)-f(a)}{h}</m> using small values of <m>h</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
 
     </subsection>
 
@@ -1168,7 +1250,9 @@
   <subsection>
     <title>After Class</title>
 
-      <xi:include href="./exercises/ex-deriv-pt.ptx" />
+      <xi:include href="./exercises/ex-deriv-pt-practice.ptx" />
+
+      <xi:include href="./exercises/ex-deriv-pt-assess.ptx" />
 
   </subsection>
 
