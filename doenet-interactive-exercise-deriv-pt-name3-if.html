@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom-styles.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/doenet-standalone.min.js"></script><script>function onLoad() {window.renderDoenetToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="changeme"><div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+          <!--Limit Definition of the Derivative at a point - Rational Function, Scaffolded-->
+
+<setup>
+<selectFromSequence name="a" from="-5" to="5" exclude="0 1"/>
+<!--   need to exclude 1 from being the coefficient of the x so that in the denominator, a(c+h) != ac+h -->
+<selectFromSequence name="b" from="-5" to="5" exclude="0  $a"/>
+<selectFromSequence name="c" from="-3" to="3" exclude="-$b/$a"/>
+<!--   make sure we're not trying to take the derivative at the asymptote -->
+<function name="f">
+    1/($a x+$b)
+  </function>
+<derivative name="fP">$f</derivative>
+<math name="fofcplushdenom" simplify> $a*$c+$b+$a h</math>
+<math name="fofcdenom" simplify>$a*$c+$b</math>
+<math name="numerator" simplify> $fofcdenom-$fofcplushdenom</math>
+<math name="simpdiffquot"> -$a/($fofcdenom*$fofcplushdenom)</math>
+</setup>
+
+  <p>
+    Consider the function <m>f(x) = $f</m>.  We are going to use the limit definition of the derivative to determine <m>f'($c)</m>.
+
+    <ol marker="a.">
+      <li>
+        <p>
+          Recall that the limit definition of <m>f'($c)</m> is
+          <me> f'($c) = \lim_{h \to 0} \frac{f($c+h)-f($c)}{h} </me>
+          and thus we need to determine expressions for <m>f($c+h)</m> and <m>f($c+h) - f($c)</m>.
+        </p>
+
+        <p>Using the given formula <m>f(x) = $f</m>,
+      which of the following is the simplest possible expression for <m>f($c+h)</m>?</p>
+            <answer>
+              <choiceInput shuffleOrder>
+                <choice><math format="latex">f($c+h) = \frac{1}{$a($c+h)+$b} </math></choice>
+                <choice><m>f($c+h)=  \frac{1}{<math simplify>$a*$c+$b</math>+h}</m>  </choice>
+                <choice><math format="latex">f($c+h) = \frac{1}{$a($c)+$b+h} </math></choice>
+                <choice credit="1"><m>f($c+h) = <math format="latex" simplify>\frac{1}{$a($c)+$b+$a h} </math></m></choice>
+              </choiceInput>
+            </answer>
+      </li>
+      <li>
+        <p> Note that <math format="latex">f($c)=\frac{1}{$a($c)+$b}=\frac{1}{$fofcdenom}</math>.
+<!--         and so <me>f($c+h)-f($c)=\frac{1}{$fofcplushdenom}-\frac{1}{$fofcdenom}.</me> -->
+      </p>
+      <p>Which of the following is the common denominator for <m>f($c+h) - f($c)</m>?</p>
+            <answer>
+              <choiceInput shuffleOrder>
+                <choice><m>$fofcdenom+($fofcplushdenom)</m></choice>
+                <choice><m>$fofcdenom+($fofcdenom+h)</m>  </choice>
+                <choice credit="1"><math>$fofcdenom*$fofcplushdenom </math>  </choice>
+                <choice><m>$fofcdenom($fofcdenom+h) </m>  </choice>
+              </choiceInput>
+            </answer>
+      </li>
+      <li>
+      <p>Which of the following is the best (simplest needed) expression for <m>f($c+h) - f($c)</m>?</p>
+            <answer name="difference">
+              <choiceInput shuffleOrder>
+                <choice feedbackText="Use the common denominator to subtract these fractions."><math format="latex">f($c+h) - f($c) = \frac{1}{$fofcplushdenom}-\frac{1}{$fofcdenom}</math></choice>
+                <choice credit="1" feedbackText="Correct! It is best not to multiply out the denominator, and the numerator is simplified as much as possible."><math format="latex">f($c+h) - f($c) =  \frac{$numerator}{$fofcdenom*$fofcplushdenom}</math>  </choice>
+                <choice feedbackText="Check that you've distributed the negative sign when you subtract."><m>f($c+h) - f($c) =</m> <math format="latex" simplify="numbers">  \frac{-$numerator}{$fofcdenom*$fofcplushdenom}</math>    </choice>
+                <choice feedbackText="Continue to simplify the numerator."><math format="latex">f($c+h) - f($c) =  \frac{$fofcdenom-$fofcplushdenom}{$fofcdenom*$fofcplushdenom}</math>  </choice>
+              </choiceInput>
+            </answer>
+        <copy source="difference.feedbacks"/>
+      </li>
+      <li> <p>Next, apply the limit definition of the derivative by substituting the simplest possible expression for <m>f($c+h)-f($c)</m> in the space provided:</p>
+<!--         <math> ((-$a h)/($fofcdenom*$fofcplushdenom))/h </math> -->
+        <p><m>f'($c)= \displaystyle \lim_{h \to 0} \frac{f($c+h)-f($c)}{h} = \lim_{h \to 0} </m> <mathInput name="dq_x1" prefill="/h"></mathInput>
+      <answer><award symbolicEquality simplifyOnCompare><when>$dq_x1 =
+         <math>((-1*$a h)/($fofcdenom*$fofcplushdenom))/h</math>
+      </when></award></answer></p>
+<!--         <feedback condition="$dq_x1 = <math> -$a/($fofcdenom*$fofcplushdenom)</math> and $dq_x1.responseHasBeenSubmitted">
+  Don't divide the h's... just substitute the numerator.
+</feedback> -->
+<!--         above feedback doesn't get triggered when I want it to, but we should add some feedback of this kind -->
+      </li>
+      <li>
+        <p>Further simplifying, we see that</p>
+        <p>  <m>f'($c)= \displaystyle \lim_{h \to 0} </m> <mathInput name="simp_x1"></mathInput>
+      <answer><award symbolicEquality simplifyOnCompare><when>$simp_x1 =
+        <math> -$a/($fofcdenom*$fofcplushdenom)</math>
+      </when></award></answer></p>
+      </li>
+      <li>
+        <p>Finally, evaluating the limit by letting <m>h \to 0</m>, we determine the value of <m>f'($c)</m>:</p>
+        <p><m>f'($c) = </m> <answer>$$fP($c)</answer></p>
+      </li>
+
+    </ol>
+  </p>
+        </script>
+</div></div></body>
+</html>
