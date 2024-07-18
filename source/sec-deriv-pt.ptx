@@ -21,7 +21,10 @@
       The derivative also measures the slope of the line tangent to a smooth curve.  The tangent line is important in graphical applications such as the design of fonts using Bezier curves, which use tangent lines to control how curves are pieced together to generate visually appealing letters and figures. 
     </p>
 
-    <xref provisional="need capacity for generating accessible images"/>
+    <aside>
+      <title>Accessible images</title>
+      <p>We will need to be able to generate accessible images, including annotation with alt-text.</p>
+    </aside>
 
   </introduction>
 
@@ -33,9 +36,17 @@
       </p>
     </exploration>
 
-    <xref provisional="decide what to call before-class activities"/>
+    <aside>
+      <title>Naming before-class activities</title>
+      <p>We will need to distinguish between before-class and during-class activities.  PreTeXt has the default <q>Exploration</q> that we're using here for before-class.  I think <q>Beginning Activity</q> would be good for before class, while simply <q>Activity</q> would be good for during class.</p>
+    </aside>
+
 
     <p>
+      <alert>Summary of important ideas from <xref ref="sec-deriv-pt-BA1">Exploration</xref>.</alert>
+
+    <assemblage xml:id="derivative-def-and-difference-quotient">
+      <p>
       For a function <m>f</m>, the <term>derivative of <m>f</m> evaluated at <m>x = a</m></term>
       is defined by 
       <me>
@@ -44,14 +55,20 @@
     </p>
     <p>
       The quantity <m>\frac{f(a+h)-f(a)}{h}</m> is often called <term>the difference quotient</term>, and this quantity measures the average rate of change of <m>f</m> on the interval <m>[a, a+h]</m>.
+      </p>
+    </assemblage>
+
     </p>  
 
-    <xref provisional="plan scheme for cross-referencing and indexing"/>
-    <xref provisional="decide about boxes for important stuff"/>
+    <aside>
+      <title><q>Stuff in boxes</q></title>
+      <p>As part of the authoring guidelines, we'll need to establish consistent plans for how we highlight/emphasize important ideas.  For example, in PreTeXt we could use an <term>assemblage</term> to offset the key ideas above.</p>
+    </aside>
+
 
     <exploration  xml:id="sec-deriv-pt-BA2">
       <p>
-        This worked example demonstrates how to apply the limit definition of the derivative to a quadratic function.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1kengWagJtnYu25DQtEBU9lM3TSvUH_VU0Piwjoxr2pQ/edit?usp=sharing">in this Google document</url>.
+        This worked example demonstrates how to apply the limit definition of the derivative to a quadratic function.  A draft of the text and images can be found <url href="https://docs.google.com/presentation/d/1OKdLKLesAx72v_SDz43FpJpiPXKiZtglLOtkWmy4iWQ/edit?usp=sharing">in these Google slides</url>.
       </p>
 
     </exploration>
@@ -140,6 +157,11 @@
 
     <p>
 <!--      To use the limit definition of the derivative to calculate <m>f'(2)</m> for <m>f(x) = x - x^2</m>, we execute the following steps. -->
+
+    <aside>
+      <title>Cross-referencing and indexing</title>
+      <p>As part of the authoring guidelines, we'll also need to establish consistent plans for cross-referencing and cross-linking; the platform will need this capacity with xml:ids.  We will also need to have a plan for indexing.  There are professionals who generate indexes after a text is written, or who can be consuted about the best way to do so as one writes.</p>
+    </aside>
 
       <table>
         <title>Summary of <xref ref="sec-deriv-pt-BA2">Exploration</xref>: finding <m>f'(2)</m> for <m>f(x) = x - x^2</m>.</title>
@@ -523,11 +545,15 @@
   <subsection>
     <title>During Class</title>
 
-    <subsection xml:id="sec-deriv-pt-H1">
-      <title>During Class - Hour 1</title>
+<!--    <subsection xml:id="sec-deriv-pt-H1">
+      <title>During Class - Hour 1</title> -->
       <p>
-        Discussion<fn>The instructor will have data on student responses to the before-class activities and will need to respond accordingly.</fn> and summary of ideas from before-class work:
-        <xref provisional="need images"/>
+        Discussion and summary of ideas from before-class work:
+
+        <aside>
+          <title>Guidance for instructor</title>
+          <p>The instructor will have data on student responses to the before-class activities and will need to respond accordingly.  In the instructor version of the text, we'll need to provide guidance for how to use the class time that is expected to correspond to this section of material; part of that guidance will involve how to respond to the work students did prior to class.</p>
+        </aside>
 
         <ul>
           <li>
@@ -559,6 +585,13 @@
               </caption>
              <image source="images/deriv-pt-tan-sec-summary.jpg" width="80%"/>
             </figure>
+
+            <aside>
+              <title>More about generating images</title>
+              <p>
+                It will be ideal if the images can be generated using source right within the platform.  That is, rather than including a .svg or .jpg file like we are doing in this draft, we could write source that builds the image upon processing (this would enable images to be updated similar to how videos are expected to function).
+              </p>
+            </aside>
           </li>
           <li>
             <p>
@@ -593,19 +626,21 @@
               </p>
             </li>
           </ol>
-          <xref provisional="need to add answers and solutions"/>
         </statement>
       </activity>
 
       <p>
         <alert>
-          Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act1">Activity</xref>
+          Peer Instruction questions as an alternative to <xref ref="sec-deriv-pt-DC-Act1">Activity</xref>
         </alert>. 
       </p>
-      <xref provisional="need a peer-instruction question format"/>
+          <aside>
+            <title>Peer instruction</title>
+            <p>We will need a format within the platform for peer instruction questions and for students to respond to them.</p>
+          </aside>  
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ1" label="DC-Act1-CQ1">
-        <title>Clicker Question 1: the difference quotient of a linear function</title>
+        <title>Peer Instruction Question 1: the difference quotient of a linear function</title>
         <statement>
           <p>
             Consider a function <m>y = f(x)</m>.  Which of the following statements is true about the quantity <m>\frac{f(5+h)-f(5)}{h}</m>?
@@ -671,7 +706,7 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ2" label="DC-Act1-CQ2">
-        <title>Clicker Question 2: rates of change of a linear function</title>
+        <title>Peer Instruction Question 2: rates of change of a linear function</title>
         <statement>
           <p>
             Let <m>f(x) = 3 - 2x</m>.  Consider the following statements.
@@ -779,10 +814,12 @@
       </ul>
     </p>
 
-    </subsection>
+<!--
+    </subsection> end of Hour 1
 
     <subsection>
       <title>During Class - Hour 2</title>
+--> 
 
       <activity xml:id="sec-deriv-pt-DC-Act2">
         <statement>
@@ -819,18 +856,21 @@
               </p>
             </li>
           </ol>
-          <xref provisional="need to add answers and solutions"/>
+          <aside>
+            <title>Answers and solutions for activities</title>
+            <p>For all in-class activities, which will primarily have free-response questions, we need to include answers and solutions, and have the capacity to either make those visible to students or to instructors only.</p>
+          </aside>
         </statement>
       </activity>
 
       <p>
         <alert>
-          Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act2">Activity</xref>
+          Peer instruction questions as an alternative to <xref ref="sec-deriv-pt-DC-Act2">Activity</xref>
         </alert>. 
       </p>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ3" label="DC-Act1-CQ3">
-        <title>Clicker Question 3: the derivative of <m>g(x) = |x|</m> at different values</title>
+        <title>Peer Instruction Question 3: the derivative of <m>g(x) = |x|</m> at different values</title>
         <statement>
           <p>
             Let <m>g(x) = |x|</m>.  Recall that if <m>x \ge 0</m>, then <m>|x| = x</m>, and if <m>x \lt 0</m>, then <m>|x| = -x</m>.  Consider the following statements.
@@ -910,7 +950,7 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ4" label="DC-Act1-CQ4">
-        <title>Clicker Question 4: the derivative of <m>g(x)=|x|</m> at <m>x = 0</m></title>
+        <title>Peer Instruction Question 4: the derivative of <m>g(x)=|x|</m> at <m>x = 0</m></title>
         <statement>
           <p>
             For <m>g(x) = |x|</m>, the limit definition of the derivative shows that 
@@ -1033,18 +1073,17 @@
               </p>
             </li>
           </ol>
-          <xref provisional="need to add answers and solutions"/>
         </statement>
       </activity>
 
       <p>
         <alert>
-          Clicker questions as an alternative to <xref ref="sec-deriv-pt-DC-Act3">Activity</xref>
+          Peer Instruction questions as an alternative to <xref ref="sec-deriv-pt-DC-Act3">Activity</xref>
         </alert>. 
       </p>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ5" label="DC-Act1-CQ5">
-        <title>Clicker Question 5: applying the limit definition to a quadratic function</title>
+        <title>Peer Instruction Question 5: applying the limit definition to a quadratic function</title>
         <statement>
           <p>
             Let <m>f(x)=-2x^2 + 3x - 4</m>.  Write down all of the steps required to apply the limit definition of the derivative to determine <m>f'(1)</m>.  [Nothing else appears on the screen until the instructor presses <q>NEXT</q>.]
@@ -1133,7 +1172,7 @@
       </exercise>
 
       <exercise xml:id="sec-deriv-pt-DC-Act1-CQ6" label="DC-Act1-CQ6">
-        <title>Clicker Question 6: applying the limit definition to a rational function</title>
+        <title>Peer Instruction Question 6: applying the limit definition to a rational function</title>
         <statement>
           <p>
             Let <m>r(x)=\frac{1}{5-x}</m>.  Write down all of the steps required to apply the limit definition of the derivative to determine <m>r'(2)</m>.  [Nothing else appears on the screen until the instructor presses <q>NEXT</q>.]
@@ -1242,7 +1281,7 @@
         </ul>
       </p>
 
-    </subsection>
+ <!--   </subsection> end of Hour 2 -->
 
   </subsection>
 
