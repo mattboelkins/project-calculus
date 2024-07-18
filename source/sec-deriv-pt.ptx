@@ -5,6 +5,21 @@
 
 
   <introduction>
+
+    <aside>
+      <title>Large-scale learning objectives</title>
+      <p>
+        <ul>
+          <li>
+            State and apply the limit definition of the derivative of a function to determine the derivative’s value at a fixed input.
+          </li>
+          <li>
+            Interpret the value of the derivative as the instantaneous rate of change of the function at that point, and also as the slope of the tangent line to the curve at that point.
+          </li>
+        </ul>
+      </p>
+    </aside>
+
     <p> 
       In the activities that follow, we begin studying the <term>derivative</term> of a function at a particular input value.  The derivative is important because it measures the instantaneous rate of change of one quantity with respect to another.  For example, in automobiles with camera detection systems and automatic braking, these systems have to measure the instantaneous rate at which the distance is changing between the car and the vehicle ahead of it.  
     </p>
