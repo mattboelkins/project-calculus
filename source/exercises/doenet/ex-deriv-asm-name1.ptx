@@ -1,0 +1,68 @@
+<!-- Limit Definition of the Derivative at a point, progressively less info given -->
+
+<setup>
+    <selectFromSequence name="a" from="-4" to="4" exclude="0"/>
+    <selectFromSequence name="b" from="-5" to="5" exclude="0 $a"/>
+    <selectFromSequence name="c" from="-6" to="6" exclude="0 $a $b"/>
+  <function name="quad">$a x^2+ $b x +$c </function>
+  <derivative name="quadprime"> $quad </derivative>
+  </setup>
+
+<aside><title>Question A</title>
+  <setup>
+    <selectFromSequence name="d" from="-3" to="3" exclude="0"/>
+    <math name="num1" simplify expand>$$quad($d+h)-$$quad($d)</math>
+  </setup>
+  <p>Say that <m>f(x)</m> is a function for which
+  <me> f'($d)=\lim_{h\to 0} \frac{$num1}{h}.</me>
+  Determine the exact value of <m>f'($d).</m></p>
+  <p><m>f'($d)=</m><answer name="calclimit">$$quadprime($d)</answer></p>
+<!--   add feedback hint after 2 wrong attempts to factor the numerator and then divide the h's. Also add randomization -->
+</aside>
+<aside><title>Question B</title>
+  <setup>
+    <selectFromSequence name="e" from="-3" to="3" exclude="0 $d"/>
+    <math name="num2" simplify expand>$$quad($e+h)-$$quad($e)</math>
+  </setup>
+  <p>Say that <m>f(x)</m> is a function for which
+  <me> \frac{f($e+h)-f($e)}{h}= \frac{$num2}{h}.</me>
+  Determine the exact value of <m>f'($e).</m></p>
+
+  <p><m>f'($e)=</m><answer name="givendiffquot">$$quadprime($e)</answer></p>
+<!--   add feedback hint after 2 wrong attempts to use the limit def of the deriv, f'(1)=lim_{h\to 0} \frac{f(1+h)-f(1)}{h}, so we're looking for the limit of this as h goes to 0. -->
+</aside>
+<aside><title>Question C</title>
+  <setup>
+    <selectFromSequence name="f" from="-3" to="3" exclude="0 $d $e"/>
+    <math name="num3" simplify expand>$$quad($f+h)-$$quad($f)</math>
+  </setup>
+  <p>Say that <m>f(x)</m> is a function for which
+  <me> f($f+h)-f($f)= $num3.</me>
+  Determine the exact value of <m>f'($f).</m></p>
+
+  <p><m>f'($f)=</m><answer name="givennumerator">$$quadprime($f)</answer></p>
+<!--   add feedback hint after 2 wrong attempts to use the limit def of the deriv, f'(1)=lim_{h\to 0} \frac{f(1+h)-f(1)}{h}, so we put this in the numerator, divide by h, and take the limit of this as h goes to 0. -->
+</aside>
+<aside><title>Question D</title>
+  <setup>
+    <selectFromSequence name="g" from="-3" to="3" exclude="0 $d $e $f"/>
+    <math name="quadofgplush" simplify expand>$$quad($g+h)</math>
+    <math name="quadofg" simplify expand>$$quad($g)</math>
+  </setup>
+  <p>Say that <m>f(x)</m> is a function for which
+  <me> f($g+h)=$quadofgplush \text{ and } f($g)=$quadofg</me>
+  Determine the exact value of <m>f'($g).</m></p>
+
+  <p><m>f'($g)=</m><answer name="givenpiecesofnumerator">$$quadprime($g)</answer></p>
+<!--   add feedback hint after 2 wrong attempts to use the limit def of the deriv, f'(1)=lim_{h\to 0} \frac{f(1+h)-f(1)}{h}, so we put these two things in the numerator, subtract, then divide by h, and finally take the limit of this as h goes to 0. -->
+</aside>
+<aside><title>Question E</title>
+  <setup>
+  <selectFromSequence name="aa" from="-3" to="3" exclude="0 $d $e $f $g"/>
+  </setup>
+  <p>Say that <m>f(x)=<math>$quad</math></m>.
+  Determine the exact value of <m>f'($aa).</m></p>
+
+  <p><m>f'($aa)=</m><answer name="givenfunction">$$quadprime($aa)</answer></p>
+<!--   add feedback hint after 2 wrong attempts to use the limit def of the deriv, f'(1)=lim_{h\to 0} \frac{f(1+h)-f(1)}{h}, so we put this in the numerator, divide by h, and take the limit of this as h goes to 0. -->
+</aside>

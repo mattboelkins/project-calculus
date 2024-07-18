@@ -4,9 +4,11 @@
   <title>Assessment Exercises</title>
 
   <exercise>
-    <statement>
-      <p>First assessment exercise</p>
-    </statement>
-  </exercise>
+    <title>Interpreting expressions that come from the limit definition of the derivative</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-asm-name1" platform="doenetml">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-asm-name1.ptx" parse="text"/>
+        </slate>   
+      </interactive>    </exercise>
 
 </exercises>

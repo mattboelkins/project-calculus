@@ -239,8 +239,53 @@
         </choices>
       </exercise>
 
+      <exercise label="matching-parts-of-a-graph-to-numbers-polynomial-1">
+        <title>Matching meaning among numerical values on a polynomial graph</title>
+        <statement>
+          <p>
+            Let <m>y = g(x)</m> be given by the following graph.
+          </p>
+          <figure>
+            <caption>Plot of <m>y = g(x)</m> and some of its tangent and secant lines.</caption>
+            <image width="50%" source="images/deriv-pt-PrEx-6-graph.jpg" />
+          </figure>
+          <p>
+            Match each expression with its meaning.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            Think about each of quantities corresponding to a slope on the graph.
+          </p>
+        </feedback>
+        <matches>
+        <match order="4">
+            <premise><m>g'(-3)</m></premise>
+            <response><m>-0.6875</m></response>
+        </match>
+        <match order="2">
+            <premise>The average rate of change of <m>g</m> on the interval <m>[1,3]</m>
+            </premise>
+            <response><m>\frac{3}{16}</m></response>
+        </match>
+        <match order="5">
+            <premise>The average rate of change of <m>g</m> on the interval <m>[-1,3]</m></premise>
+            <response><m>\frac{9}{16}</m></response>
+        </match>
+        <match order="3">
+            <premise>The instantaneous rate of change of <m>g</m> at the instant <m>x=0</m></premise>
+            <response><m>1</m></response>
+            </match>
+        <match order="1">      
+            <premise>The slope of the secant line <m>\overline{QR}</m></premise>
+            <response><m>-\frac{33}{16}</m></response>
+        </match>
+        </matches>
+      </exercise>
+
+
       <exercise label="matching-parts-of-a-graph-to-numbers-rational-1">
-        <title>Matching meaning to numerical values</title>
+        <title>Matching meaning to numerical values on a rational function graph</title>
         <statement>
           <p>
             Let <m>y = r(x)</m> be given by the following graph.
@@ -284,6 +329,64 @@
             <response><m>0.1538</m></response>
         </match>
         </matches>
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-PrEx6">
+        <title>The derivative of a linear function</title>
+        <statement>
+          <p>
+            If <m>L(x)</m> is a linear function given by <m>L(x)=mx+b</m> where <m>m \ne 0</m> and <m>b</m> is any number, then
+          </p>
+        </statement>
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>L'(0) = b</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  Think about how the value of the derivative measures the slope of the tangent line to the function.  The point <m>(0,b)</m> is the <m>y</m>-intercept of this function; <m>b</m> is not the slope.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>L'(0) = 0</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  Think about how the value of the derivative measures the slope of the tangent line to the function; the slope of this function is not <m>0</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+          <statement>
+          <p>
+            <m>L'(0) = -\frac{1}{m}</m>
+          </p>
+          </statement>
+          <feedback>
+            That's incorrect.  The value <m>-\frac{1}{m}</m> is the slope of a line perpedicular to <m>L(x)</m> at <m>x = 0</m>, not the slope of <m>L(x)</m> itself at <m>x = 0</m>.
+          </feedback>
+        </choice>        
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>L'(0) = m</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s correct.  The derivative value <m>L'(0)</m> measures the slope of the tangent line to <m>L(x)</m> at the point <m>(0,b)</m>.  In fact, the value of <m>L'(a)</m> is equal to <m>m</m> for any choice of <m>a</m>.
+          </p>
+        </feedback>
+        </choice>
+        </choices>
       </exercise>
 
   <exercise xml:id="ex-deriv-pt-name2">
