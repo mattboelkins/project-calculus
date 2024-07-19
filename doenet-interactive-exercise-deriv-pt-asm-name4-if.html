@@ -77,75 +77,56 @@ window.MathJax = {
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/style.css">
 <script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/doenet-standalone.min.js"></script><script>function onLoad() {window.renderDoenetToContainer(document.querySelector(".doenetml-applet"))}</script>
 </head>
-<body class="ptx-content ignore-math" id="changeme"><div style="width:600px; height:1080px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet">
+<body class="ptx-content ignore-math" id="changeme"><div style="width:600px; height:720px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet">
 <div class="doenetml-loading" style="text-align:center">
 <p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-          <setup>
-<selectFromSequence name="a" from="-7" to="-3"/>
-<selectFromSequence name="b" from="2" to="6"/>  
-<selectFromSequence name="c" from="-3" to="3" exclude="0"/>  
-<function name="f">
-    $a*x + $b
-  </function>
-  <derivative name="fP">$f</derivative>  
+          <!-- 
+licensed from Active Calculus MB development, https://github.com/mattboelkins/active-calculus-single-mbx/blob/doenet-embed/source/exercises/doenet/ez-1-3-doenet-3.xml
+-->
+
+
+<setup>
+
+  <selectFromSequence assignNames="a" from="1.5" to="2.5" step="0.25" numToSelect="1"/>
+  <selectFromSequence assignNames="b" from="0" to="2" step="0.5" numToSelect="1"/>  
+  <selectFromSequence assignNames="c" from="-1.16" to="0.56" step="0.1" numToSelect="1"/> 
+
+  <math name="ABSb"><abs>$b</abs></math>
+  
+  <function name="g" symbolic="false">-1*$a^x + $b</function>
+  <derivative name="gP" symbolic="false">$g</derivative>  
+  <function name="L" symbolic="false" styleNumber="3" labelPosition="lowerRight">$$gP($c)(x-$c) + $$g($c)</function>  
+    <point name="A" styleNumber="2" coords="($c,$$g($c))" showCoordsWhenDragging="false" draggable="false" labelPosition="upperRight"> 
+      <label><m>A = $A.coords</m></label>
+    </point> 
+    <point name="B" styleNumber="2" coords="($c+0.6*$a,$$L($c+0.6*$a))" showCoordsWhenDragging="false" draggable="false" labelPosition="upperRight"> 
+      <label><m>B = $B.coords</m></label>
+    </point>
+
+  <label name="gLabel" anchor="(-3,$$g(-3)-0.25)"><m>y = g(x)</m></label>
+  <label name="LLabel" anchor="(-3,$$L(-3)+0.25)"><m>y = L(x)</m></label>
+  
 </setup>
 
-  <p>
-    Consider the function <m>f(x) = $f</m>.  We are going to use the limit definition of the derivative to determine <m>f'($c)</m>.
+  <p>Let <m>g</m> be the function given by the graph below and <m>L</m> its tangent line at the point <m>A</m>.</p>
 
-    <ol marker="a.">
-      <li>
-        <p>
-          Recall that the limit definition of <m>f'($c)</m> is
-          <me> f'($c) = \lim_{h \to 0} \frac{f($c+h)-f($c)}{h} </me>
-          and thus we need to determine expressions for <m>f($c+h)</m> and <m>f($c+h) - f($c)</m>.
-        </p>
+<!--  <p><m>a = $a</m>, <m>b = $b</m>, and <m>c = $c</m>, so <m>g(x) = $$g(x)</m> and <m>L(x) = $$L(x)</m>, plus <m>A = $A</m> and <m>B = $B</m></p> -->
 
-        <p>Using the given formula <m>f(x) = $f</m>, 
-      which of the following is the simplest possible expression for <m>f($c+h)</m>?</p>
-            <answer>
-              <choiceInput>
-                <choice><m>f($c+h) = $a($c+h) + $b </m></choice>
-                <choice credit="1"><m>f($c+h)=  <math simplify> $a*$c + $b + $a*h</math></m>  </choice>
-                <choice><m>f($c+h)=  <math simplify> -$a*$c + $b + $a*h</math></m>  </choice>
-                <choice><m>f($c+h)=  <math simplify> $a*$c + $b - $a*h</math></m>  </choice>> 
-              </choiceInput>
-            </answer>  
-      </li>
-      <li>
-      <p>Which of the following is the simplest possible expression for <m>f($c+h) - f($c)</m>?</p>
-            <answer>
-              <choiceInput>
-                <choice><m>f($c+h) - f($c) = $a($c+h) + $b - (<math simplify="numbers">$a*$c+$b</math>) </m></choice>
-                <choice><m>f($c+h) - f($c) =  <math simplify>-$a*h </math></m>  </choice>
-                <choice credit="1"><m>f($c+h) - f($c) =  <math simplify>$a*h </math></m>  </choice>
-                <choice><m>f($c+h) - f($c) =  <math simplify>$a*h + 2*$b </math></m>  </choice>  
-              </choiceInput>
-            </answer>   
-      </li>
-      <li> Next, apply the limit definition of the derivative by substituting the simplest possible expression for <m>f($c+h)-f($c)</m> in the space provided:
-        <p><m>f'($c)= \displaystyle \lim_{h \to 0} \frac{f($c+h)-f($c)}{h} = \lim_{h \to 0} </m> <mathInput name="dq_x1" prefill="/h"></mathInput>
-      <answer><award><when>$dq_x1 = 
-        ($$f($c+h) - $$f($c))/h
-      </when></award></answer></p>
-      </li>
-      <li>
-        <p>Now simplifying, we see that</p>
-        <p>  <m>f'($c)= \displaystyle \lim_{h \to 0} </m> <mathInput name="simp_x1"></mathInput>
-      <answer><award><when>$simp_x1 = 
-        $a
-      </when></award></answer></p>
-      </li>
-      <li>
-        <p>Finally, evaluating the limit by letting <m>h \to 0</m>, we determine the value of <m>f'($c)</m>:</p>
-        <p><m>f'($c) = </m> <answer>$$fP($c)</answer></p>
-      </li>
+    <figure>
+      <graph xmin="-4" xmax="4" ymin="-4" ymax="4" size="medium" grid="false" showNavigation="false" displayXAxis="false" displayYAxis="false"> $g $L $A $B $gLabel $LLabel
+      </graph>
+      <caption>Plot of <m>y = g(x)</m> and its tangent line at the point <m>A</m></caption>
+    </figure>
 
-    </ol>
-  </p>
+  <p>Use the given information to complete the following sentence. </p>  
+  <p>At the point where <m>a = </m><answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $c
+        </award></answer>, we know that <m>g(a) = </m><answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $$g($c)
+        </award></answer> and <m>g'(a) = </m><answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $$gP($c)
+        </award></answer>.</p>
+   
         </script>
 </div></div></body>
 </html>
