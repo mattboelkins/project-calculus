@@ -1,0 +1,31 @@
+<!-- 
+licensed from Active Calculus MB development, https://github.com/mattboelkins/active-calculus-single-mbx/blob/doenet-embed/source/exercises/doenet/ez-1-3-doenet-5.xml
+-->
+
+
+<setup>
+
+  <selectFromSequence assignNames="k" from="3" to="7" step="1" numToSelect="1"/>  
+  <selectFromSequence assignNames="m" from="2" to="5" step="1" numToSelect="1"/>    
+  <selectFromSequence assignNames="n" from="5" to="9" step="1" numToSelect="1"/> 
+  
+  <function name="f" symbolic="true">$m * $k^x + $n</function>
+  <derivative name="fP" symbolic="true">$f</derivative>  
+  
+  <function name="g" symbolic="true">$k * cos($m*x) + $n</function>
+  <derivative name="gP" symbolic="true">$g</derivative>  
+
+</setup>
+
+
+  <p>Use the limit definition to estimate the derivative value requested to within an accuracy of <m>0.01</m>.</p>
+  <ol marker="a.">
+    <li>
+      <p>If <m>f(x) = <math simplify>$$f(x)</math></m>, then <m>f'(<math simplify>$m+1</math>) \approx </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute><award> $$fP($m + 1)</award></answer>.</p>
+    </li>
+    <li>
+      <p>If <m>g(x) = <math simplify>$$g(x)</math></m>, then <m>g'(<math simplify>$m-1</math>) \approx </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute><award> $$gP($m - 1)</award></answer>.</p>
+    </li>
+
+  </ol>
+   

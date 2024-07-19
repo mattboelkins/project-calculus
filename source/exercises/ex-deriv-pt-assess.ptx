@@ -5,10 +5,38 @@
 
   <exercise>
     <title>Interpreting expressions that come from the limit definition of the derivative</title>
-       <interactive xml:id="doenet-interactive-exercise-deriv-pt-asm-name1" platform="doenetml">
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-asm-name1" platform="doenetml" width="100%" aspect="3:2">
         <slate surface="doenetml">
           <xi:include href="./doenet/ex-deriv-asm-name1.ptx" parse="text"/>
         </slate>   
-      </interactive>    </exercise>
+      </interactive>    
+  </exercise>
+
+  <exercise>
+    <title>Applying the limit definition of the derivative to compute exact derivative values</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-asm-name2" platform="doenetml" width="100%" aspect="3:1">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-asm-name2.ptx" parse="text"/>
+        </slate>   
+      </interactive>      
+  </exercise>
+
+  <exercise>
+    <title>Applying the limit definition of the derivative to estimate derivative values</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-asm-name3" platform="doenetml" width="100%" aspect="3:1">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-asm-name3.ptx" parse="text"/>
+        </slate>   
+      </interactive>      
+  </exercise>
+
+  <exercise>
+    <title>Interpreting function and derivative values from a graph that includes the tangent line</title>
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-asm-name4" platform="doenetml" width="100%" aspect="2.5:3">
+        <slate surface="doenetml">
+          <xi:include href="./doenet/ex-deriv-asm-name4.ptx" parse="text"/>
+        </slate>   
+      </interactive>      
+  </exercise>
 
 </exercises>
