@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-deriv-pt-practice">
 
-  <title>Practice Exercises</title>
+  <title>After Class - Hour 2: Practice Exercises</title>
 
       <exercise xml:id="sec-deriv-pt-PrEx1">
         <title>Interpreting function and derivative values</title>
@@ -391,7 +391,7 @@
 
   <exercise xml:id="ex-deriv-pt-name2">
     <title>Using the limit definition of the derivative with a linear function</title>
-       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name2" platform="doenetml">
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name2" platform="doenetml" width="100%" aspect="5:9">
         <slate surface="doenetml">
           <xi:include href="./doenet/ex-deriv-pt-name2.ptx" parse="text"/>
         </slate>   
@@ -400,7 +400,7 @@
 
   <exercise xml:id="ex-deriv-pt-name1">
     <title>Using the limit definition of the derivative with a quadratic function</title>
-       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name1" platform="doenetml">
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name1" platform="doenetml" width="100%" aspect="5:9">
         <slate surface="doenetml">
           <xi:include href="./doenet/ex-deriv-pt-name1.ptx" parse="text"/>
         </slate>   
@@ -409,7 +409,7 @@
 
   <exercise xml:id="ex-deriv-pt-name3">
     <title>Using the limit definition of the derivative with a rational function</title>
-       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name3" platform="doenetml">
+       <interactive xml:id="doenet-interactive-exercise-deriv-pt-name3" platform="doenetml" width="100%" aspect="2.1:5">
         <slate surface="doenetml">
           <xi:include href="./doenet/ex-deriv-pt-name3.ptx" parse="text"/>
         </slate>   
