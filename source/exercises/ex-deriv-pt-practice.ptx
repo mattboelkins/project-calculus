@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-deriv-pt-practice">
 
-  <title>After Class - Hour 2: Practice Exercises</title>
+  <title>After Class: Practice </title>
+
+      <aside>
+        <title>Practice Exercises</title>
+        <p>
+          Practice exercises are designed to provide lots of immediate feedback and (where there is more than one question in a sequence) to have questions be highly scaffolded.
+        </p>
+      </aside>
 
       <exercise xml:id="sec-deriv-pt-PrEx1">
         <title>Interpreting function and derivative values</title>

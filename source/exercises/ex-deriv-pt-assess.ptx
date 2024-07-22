@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-deriv-pt-assess">
 
-  <title>Assessment Exercises</title>
+  <title><!-- Assessment --> Exercises</title>
+
+  <aside>
+    <title>Assessment Exercises</title>
+    <p>
+      Assessment exercises are designed to focus more on having students work without feedback (perhaps only with feedback if their conclusion is right or wrong) and to have these or similar questions available for use in graded homework or quizzes.
+    </p>
+  </aside>
 
   <exercise>
     <title>Interpreting expressions that come from the limit definition of the derivative</title>
@@ -38,5 +45,12 @@
         </slate>   
       </interactive>      
   </exercise>
+
+  <aside>
+    <title>More assessment exercises forthcoming</title>
+    <p>
+      See <url href="https://docs.google.com/document/d/1ECHmBAtqa2pdDt7Rcn-2MLy0Iz36DUBu7zPS2gBq9Mw/edit#bookmark=id.bckluixmsstx">this Google document</url> for additional exercises
+    </p>
+  </aside>
 
 </exercises>
