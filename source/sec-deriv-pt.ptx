@@ -45,10 +45,191 @@
 
 
   <subsection xml:id="sec-deriv-pt-subsection-BC">
-    <title>Before Class - Hour 1</title>
+    <title>Before Class <!-- - Hour 1 --></title>
+
+    <exploration xml:id="sec-deriv-pt-review">
+      <p>
+        In Section 1.1, we learned how the average velocity of a moving object, such as a car driving on a straight road, is determined by the quantity
+        <me>
+          \frac{\text{change in position}}{\text{change in time}}
+        </me>.
+
+        More generally, the average rate of change of a function <m>f</m> from <m>x = a</m> to <m>x = b</m> is given by
+        <me>
+          AV_{[a,b]} = \frac{f(b)-f(a)}{b-a} = \frac{\text{change in } f}{\text{change in } x}
+        </me>.  For example, if <m>f(x) = 4x - x^2</m>, 
+        <me>
+          AV_{[2,4]} = \frac{f(4) - f(2)}{4-2} = \frac{0 - 4}{2} = -2
+        </me>
+        The average rate of change of a function is important because it provides information about how a function is changing.  
+      </p>
+      <p>
+        Learning objectives for this activity<fn><p>
+        <ul>
+          <li>
+            <p>compute the average rate of change of a function on a given interval</p>
+          </li>
+          <li>
+            <p>interpret the average rate of change as the slope of a secant line (and vice versa)</p>
+          </li>
+        </ul>
+        </p>
+      </fn>
+    </p>
+    </exploration>
+    <aside>
+      <title>Notes on <xref ref="sec-deriv-pt-review">Beginning Activity</xref></title>
+      <p>
+        This activity is designed to remind students of key ideas in Section 1.1 and extend them slightly in preparation for the other Beginning Activities.
+      </p>
+    </aside>
+
+    <p>Questions to be embedded in <xref ref="sec-deriv-pt-review">Exploration</xref></p>
+      <exercise xml:id="sec-deriv-pt-review-MC1" label="review-MC1">
+        <title>Q1: computing the average rate of change from a formula
+        </title>
+        <statement>
+          <p>
+            Let <m>f(x) = 2x^2 - 3x + 4</m>.  Then
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>AV_{[1,3]} = 13</m>
+          </p>  
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  But <m>f(3) = 13</m> is an important part of computing <m>AV_{[1,3]}</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>AV_{[1,3]} = 3</m>
+          </p> 
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  But <m>f(1) = 3</m> is an important part of computing <m>AV_{[1,3]}</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>AV_{[1,3]} = 5</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s correct since 
+            <me>
+              AV_{[1,3]} = \frac{f(3)-f(1)}{3-1} = \frac{13-3}{2} = \frac{10}{2} = 5 
+            </me>. 
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              <m>AV_{[1,3}] = 10</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              That’s incorrect.  But <m>f(3) - f(1) = 13 - 3 = 10</m> is an important part of computing <m>AV_{[1,3]}</m>.
+            </p>
+          </feedback>
+        </choice>
+        </choices>
+      </exercise>
+
+      <exercise xml:id="sec-deriv-pt-review-MC2" label="review-MC2">
+        <title>Q2: computing the average rate of change from a graph
+        </title>
+        <statement>
+          <p>
+            Let <m>f(x)</m> be the function given by the following graph.  
+          </p>
+
+          <image source="images/deriv-pt-AV-rev-Q2.jpg" />
+          
+          <p>
+            Which of the following statements is true?
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>AV_{[1,3]} = 13</m>
+          </p>  
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  But <m>f(3) = 13</m> is an important part of computing <m>AV_{[1,3]}</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>AV_{[1,3]} = 3</m>
+          </p> 
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  But <m>f(1) = 3</m> is an important part of computing <m>AV_{[1,3]}</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>AV_{[1,3]} = 5</m>
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s correct since 
+            <me>
+              AV_{[1,3]} = \frac{f(3)-f(1)}{3-1} = \frac{13-3}{2} = \frac{10}{2} = 5 
+            </me>. 
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              <m>AV_{[1,3}] = 10</m>
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              That’s incorrect.  But <m>f(3) - f(1) = 13 - 3 = 10</m> is an important part of computing <m>AV_{[1,3]}</m>.
+            </p>
+          </feedback>
+        </choice>
+        </choices>
+      </exercise>
+      <aside>
+        <title>More questions forthcoming</title>
+        <p>
+          There will be 3-4 more questions here.
+        </p>
+      </aside>
+
     <exploration xml:id="sec-deriv-pt-BA1">
       <p>
-        This beginning activity introduces the limit definition of the derivative using an animation with embedded questions.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1m9_N7AeLF2Xugtb7fjNntLfFTcfzFyL1IoeU22h-33g/edit?usp=sharing">in this Google document</url>. 
+        This beginning activity introduces the limit definition of the derivative using an animation with embedded questions.  A draft of the text and images can be found <url href="https://docs.google.com/document/d/1m9_N7AeLF2Xugtb7fjNntLfFTcfzFyL1IoeU22h-33g/edit?usp=sharing">in this Google document</url>, along with a prototype animation that has several embedded questions for students. 
       </p>
       <p>
         Learning objectives for this activity<fn><p>
@@ -125,6 +306,62 @@
     </exploration>
 
     <p>Questions to be embedded in <xref ref="sec-deriv-pt-BA2">Exploration</xref></p>
+
+      <exercise xml:id="sec-deriv-pt-BA2-Q1" label="BA2-Q1">
+        <title>Interpreting the slope of the tangent line to a curve
+        </title>
+        <statement>
+          <p>
+            Let <m>f(x)</m> be the function given by the following graph.  
+          </p>
+
+          <image source="images/deriv-pt-BA2-tan-line.jpg" />
+          
+          <p>
+            Which of the following statements is true?
+          </p>
+        </statement>
+
+
+        <choices>
+        <choice>
+        <statement>
+          <p>
+            <m>f'(2)</m> is positive.
+          </p>  
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  Remember that <m>f'(2)</m> measures the slope of the tangent line to <m>y =f(x)</m> at the point <m>(2,f(2))</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice>
+        <statement>
+          <p>
+            <m>f'(2) = 0</m>.
+          </p> 
+        </statement>
+        <feedback>
+          <p>
+            That's incorrect.  If <m>f'(2) = 0</m>, then the graph would have a horizontal tangent line (with slope <m>0</m>) at <m>(2,f(2))</m>.
+          </p>
+        </feedback>
+        </choice>
+        <choice correct="yes">
+        <statement>
+          <p>
+            <m>f'(2)</m> is negative.
+          </p>
+        </statement>
+        <feedback>
+          <p>
+            That’s correct since <m>f'(2)</m> measures the slope of the tangent line to <m>y =f(x)</m> at the point <m>(2,f(2))</m>; since the tangent line at <m>(2,f(2))</m> falls from left to right, its slope is negative, and thus so is the value of <m>f'(2)</m>.  
+          </p>
+        </feedback>
+        </choice>
+        </choices>
+      </exercise>
 
         <exercise label="limit-def-deriv-steps" adaptive="yes">
         <title>Parsons Problem, applying the limit definition of the derivative</title>
@@ -891,6 +1128,12 @@ licensed from Active Calculus, https://github.com/active-calculus/active-calculu
     <subsection>
       <title>During Class - Hour 2</title>
 
+      <aside>
+        <title>Instructor guidance</title>
+        <p>
+          We'll want to offer guidance for instructors based on what was accomplished in the preceding hour of class and an overview of what's important to do next.
+        </p>
+      </aside>
 
       <activity xml:id="sec-deriv-pt-DC-Act2">
         <statement>
